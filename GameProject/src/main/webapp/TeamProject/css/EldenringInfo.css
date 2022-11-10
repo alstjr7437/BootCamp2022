@@ -1,0 +1,40 @@
+#Category {position: fixed; width: 100%; height: 12%; top: 10%; background-color: white; z-index: 2;}
+#ScrollForCon {display: inline-block;position: relative; width: 50%; left: 25%; top: 10px; z-index: 2;}
+#ScrollForCon > a {margin-right: 7%;}
+#ScrollForCon > a:hover {background: rgba(128,128,128,0.3); border-radius: 30px;}
+#slideShowBack {position: absolute; top: 665px; width: 100%; height: 50%; background-color: rgb(10,37,39);}
+#screenShots {width: 80%; height: 60%; top: 20%; position: absolute; left: 10%;}
+#screenShots > img {border-radius: 10px; margin-right: 30px;}
+#GameTag {margin-bottom: 20px; height: 30px;}
+#GameTag > span {border-style: solid; font-size: 15px; width: 30px; height: 10px; border-width: 1px;}
+#FirstSection {position: absolute; top: 22%; width: 100%; height: 81%; background-image: url("../image/EldenRingGameInfo.jpg"); background-repeat: no-repeat;}
+#FirstInfo {font-family: 'Malgun Gothic'; color: white; position: relative; left: 15%; top: 10%; width: 300px;}
+#FirstInfoGrad {width: 100%; height: 100%; background: radial-gradient(farthest-side at 100% 45%, transparent, rgb(10,37,39));}
+#GameTitle {font-size: 50px; font-weight: 50; margin-bottom: 10px;}
+#Developer {font-weight: 10; margin-bottom: 30px;}
+#GamePrice {font-weight: 10; font-size: 30px; margin-bottom: 30px;}
+#putInCart {border-radius: 30px; border-style: solid; width: 250px; height: 40px; background-color: transparent; border-color: #FF4500; color:#FF4500; font-size: 17px; margin-bottom: 30px;}
+#putInCart:hover {border-color: #FF4500; background-color:#FF4500; color: white;}
+#AvildDate {font-weight: 10; margin-bottom: 30px;}
+#FirstInfo > img {margin-right: 20px;}
+#StackView {display: inline; width: 300px; height: 200px; position: absolute;}
+#StackView > h4 {width: 100px;}
+#TwoSection {position: absolute; top: 986px; width: 100%; height: 800px; background-image: url("../image/eldenringTwoSection.jpg"); background-size: 100% 100%;}
+#TwoSectionStart {position: absolute; width: 100%; height: 18%; background: linear-gradient(to bottom, rgb(10,37,39), transparent);}
+#twoTopMemo {position: absolute; left: 12%; top: 20%; font-weight: 1px;}
+#FirstMemo {color: rgb(130, 110, 0);}
+#SecondMemo {color: white; font-size: 30px;}
+#twoRightMemo {position: absolute; right: 2%; width: 40%; top: 17%; color: white;}
+#ThreeSection {position: absolute; top: 1786px; width: 100%; height: 750px; background-color: rgb(10,37,39);}
+#ThreeSection > h2 {color: white; position: absolute; left: 38%; top: 10%;}
+#ThreeSectionImages {position: absolute; width: 90%; top: 30%; left: 10%;}
+#ThreeSectionImages > img {border-radius: 10px; margin-right: 50px;}
+#ThreeSecFirstInfo {position: absolute; width: 300px; height: 300px; left: 0%; top: 100%; margin-top: 20px;}
+#ThreeSecSecondInfo {position: absolute; width: 300px; height: 300px; left: 31%; top: 100%; margin-top: 20px;}
+#ThreeSecThirdInfo {position: absolute; width: 300px; height: 300px; left: 63%; top: 100%; margin-top: 20px;}
+.InfoTitle {color: white;}
+.InfoSub {color: white; font-size: 18px; margin-top: 20px;}
+#FourthSection {position: absolute; width: 100%; height: 80%; top: 2536px; background-color: rgb(25,25,112);}
+#System {position: absolute; color: white; left: 10%; top: 10%;}
+#minSys {position: absolute; width: 300px; top: 30%; left: 10%; color: white;}
+#maxSys {position: absolute; width: 300px; top: 30%; right: 30%; color: white;}
