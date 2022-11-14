@@ -16,7 +16,7 @@
 <body>
 <form>
 <div id="header">
-	<img src="image/Alogo.png" width=70px height=70px><h2>| STORE</h2>
+	<img src="css/image/Alogo.png" width=70px height=70px><h2>| STORE</h2>
 </div>
 <div id="Category">
 	<div id="icons">
