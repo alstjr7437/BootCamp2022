@@ -1,11 +1,12 @@
-CREATE DATABASE ProjectDB;
-GRANT ALL PRIVILEGES ON ProjectDB.* TO indef@localhost IDENTIFIED BY '1111' WITH GRANT OPTION;
+
+CREATE DATABASE GameProjectDB;
+GRANT ALL PRIVILEGES ON GameProjectDB.* TO indef@localhost IDENTIFIED BY '1111' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
-USE ProjectDB;
+USE GameProjectDB;
 
 CREATE TABLE signUp
 	( 
-	  email VARCHAR(150),
+	  email VARCHAR(150) PRIMARY KEY,
 	  uname VARCHAR(50),
 	  pwd VARCHAR(50),
 	  infor VARCHAR(300)
@@ -38,6 +39,8 @@ ALTER TABLE game
 );
 CREATE TABLE cart (
 	gprice INT(10)
+	FOREIGN KEY (gprice)
+	REFERENCES game(gnum)
 );
 ALTER TABLE cart
 	ADD (
@@ -45,8 +48,6 @@ ALTER TABLE cart
 );
 ALTER TABLE cart 
 	ADD (
-	FOREIGN KEY (gprice)
-	REFERENCES game(gnum)
 );
 ALTER TABLE game
 	ADD(
