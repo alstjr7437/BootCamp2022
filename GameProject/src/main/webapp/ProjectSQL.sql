@@ -13,7 +13,7 @@ CREATE TABLE signUp
 	);
 CREATE TABLE game
 	(
-		gnum INTEGER(11),
+		gnum INTEGER(11) PRIMARY KEY,
 		gname VARCHAR(100),
 		gprice INTEGER(10)
 	);
@@ -29,10 +29,6 @@ INSERT INTO game VALUES(8, 'Deceit', 0);
 INSERT INTO game VALUES(9, 'Tom Clancys The Division', 33000);
 INSERT INTO game VALUES(10, 'H1Z1', 0);
 
-ALTER TABLE signup
- ADD (
- 	PRIMARY KEY (email)
-);
 ALTER TABLE game
  ADD (
  	PRIMARY KEY (gprice)
