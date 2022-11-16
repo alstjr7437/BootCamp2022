@@ -1,0 +1,19 @@
+#imageSection {position: absolute; width: 100%; height: 80%; top: 10%;}
+#imageSection > img {position: absolute;}
+#FirstInfo {font-family: 'Malgun Gothic'; color: white; position: relative; left: 15%; top: 7%; width: 500px;}
+#GameTag {margin-bottom: 20px; height: 30px;}
+#GameTag > span {border-style: solid; font-size: 15px; width: 30px; height: 10px; border-width: 1px;}
+#GameTitle {font-size: 50px; font-weight: 50; margin-bottom: 10px;}
+#Developer {font-weight: 10; margin-bottom: 30px;}
+#GamePrice {font-weight: 10; font-size: 30px; margin-bottom: 30px;}
+#putInCart {border-radius: 30px; border-style: solid; width: 250px; height: 40px; background-color: transparent; border-color: #FF4500; color:#FF4500; font-size: 17px; margin-bottom: 30px;}
+#putInCart:hover {border-color: #FF4500; background-color:#FF4500; color: white;}
+#AvildDate {font-weight: 10; margin-bottom: 30px;}
+#StackView {display: inline; width: 300px; height: 200px; position: absolute;}
+#StackView > h4 {width: 100px;}
+#TwoSection {position: absolute; top: 90%; width: 100%; height: 70%; background-color: rgb(23,23,25);}
+#TSinfo {position: absolute; width: 80%; height: 60%; color: gray; font-size: 15px; text-align: center; margin-left: 10%; margin-top: 10%;}
+#ThirdSection {position: absolute; width: 100%; height: 80%; top: 160%; background-color: rgb(25,25,112);}
+#System {position: absolute; color: white; left: 10%; top: 10%;}
+#minSys {position: absolute; width: 300px; top: 30%; left: 10%; color: white;}
+#maxSys {position: absolute; width: 300px; top: 30%; right: 30%; color: white;}
