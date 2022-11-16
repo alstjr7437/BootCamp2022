@@ -17,9 +17,9 @@
 	for(SearchDto dto : dtos) {
 			int check = dao.checkUnique(dto.getGnum());
 			if(check == 0) {
-			CartDto cdto = new CartDto(dto.getGprice(), dto.getGnum(), email);
-			dao.insert(cdto);
-			response.sendRedirect("MainPage.jsp");
+				CartDto cdto = new CartDto(email, dto.getGnum(), dto.getGprice());
+				dao.insert(cdto);
+				response.sendRedirect("MainPage.jsp");
 			} else {
 %>
 			<script>

@@ -12,7 +12,7 @@
     <title>GameInformation</title>
     <link rel="stylesheet" href="../css/Gameinfo.css">
     <link rel="stylesheet" href="../css/header.css">
-    <script type="text/javascript" src="../jsfolder/clickinsert.js?ver=1"></script>
+    <script type="text/javascript" src="../jsfolder/clickinsert.js"></script>
 </head>
 <body>
     <div id="header">

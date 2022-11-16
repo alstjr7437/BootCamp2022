@@ -26,13 +26,13 @@
     <!--
     <Manager pathname="" />
     -->
-     <Resource name ="jdbc/joyPark"
+     <Resource name ="jdbc/alstjr"
 	auth = "Container"
 	type="javax.sql.DataSource"
 	driverClassName = "org.mariadb.jdbc.Driver"
-	username="indef"
+	username="alstjr"
 	password="1111"
-	url="jdbc:mariadb://localhost:3333/ProjectDB"
+	url="jdbc:mariadb://localhost:3306/gameprojectdb"
 	maxWaitMillis = "-1"
 	/>
 </Context>

@@ -1,4 +1,4 @@
-package project.dto;
+package signUp;
 
 public class SignUpDto {
 	private String email;
@@ -6,7 +6,6 @@ public class SignUpDto {
 	private String pwd;
 	private String infor;
 	private int credit;
-	
 	public String getEmail() {
 		return email;
 	}
@@ -25,16 +24,6 @@ public class SignUpDto {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
-	public SignUpDto(String email, String uname, String pwd, String infor, int credit) {
-		this.email = email;
-		this.uname = uname;
-		this.pwd = pwd;
-		this.infor = infor;
-		this.credit = credit;
-	}
-	public SignUpDto() {
-		
-	}
 	public String getInfor() {
 		return infor;
 	}
@@ -47,4 +36,13 @@ public class SignUpDto {
 	public void setCredit(int credit) {
 		this.credit = credit;
 	}
+	
+	public SignUpDto(String email, String uname, String pwd, String infor, int credit) {
+		this.email = email;
+		this.uname = uname;
+		this.pwd = pwd;
+		this.infor = infor;
+		this.credit = credit;
+	}
+	public SignUpDto() {}
 }

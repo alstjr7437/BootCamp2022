@@ -20,6 +20,7 @@ CREATE TABLE game(
 CREATE TABLE cart(
 	cuser VARCHAR(150),
 	cgame INT(10),
+	cprice INT(30),
 	FOREIGN KEY (cuser) REFERENCES signUp(email), 
 	FOREIGN KEY (cgame) REFERENCES game(gnum) 
 );
@@ -72,3 +73,6 @@ INSERT INTO game VALUES(10, 'Tom Clancys The Division', 33000, '3인칭, 액션R
 
 SELECT * FROM signup;
 SELECT * FROM game;
+SELECT * FROM cart;
+SELECT cgame FROM cart WHERE cuser="alstjr7437@naver.com" AND cgame=2;
+SELECT * FROM game WHERE gnum = ( SELECT gnum FROM cart WHERE cuser="alstjr7437@naver.com" AND cgame=2)

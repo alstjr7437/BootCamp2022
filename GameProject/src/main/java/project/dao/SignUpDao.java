@@ -17,7 +17,7 @@ public class SignUpDao {
 	      //1-2. "java:comp/env"에 해당하는 객체를 찾아서 envCtx에 삽입
 	      Context envCtx = (Context)initCtx.lookup("java:comp/env");
 	      //1-3. "jdbc/joypark"에 해당되는 객체를 찾아서 ds에 삽입
-	      DataSource ds = (DataSource)envCtx.lookup("jdbc/joyPark");
+	      DataSource ds = (DataSource)envCtx.lookup("jdbc/alstjr");
 	      //1-4. 커넥션 풀로 부터 커넥션 객체를 얻어냄
 	      Connection con = ds.getConnection();
 	      return con;

@@ -1,31 +1,38 @@
 package project.dto;
 
 public class CartDto {
-	private int gprice;
-	private int gnum;
-	private String email;
-	public int getGprice() {
-		return gprice;
+	private String cuser;
+	private int cgame;
+	private int cprice;
+
+	public CartDto(String cuser, int cgame, int cprice) {
+		this.cuser = cuser;
+		this.cgame = cgame;
+		this.cprice = cprice;
 	}
-	public void setGprice(int gprice) {
-		this.gprice = gprice;
+
+	public String getCuser() {
+		return cuser;
 	}
-	public int getGnum() {
-		return gnum;
+
+	public void setCuser(String cuser) {
+		this.cuser = cuser;
 	}
-	public void setGnum(int gnum) {
-		this.gnum = gnum;
+
+	public int getCgame() {
+		return cgame;
 	}
-	public String getEmail() {
-		return email;
+
+	public void setCgame(int cgame) {
+		this.cgame = cgame;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+
+	public int getCprice() {
+		return cprice;
 	}
-	public CartDto(int gprice, int gnum, String email) {
-		this.gprice = gprice;
-		this.gnum = gnum;
-		this.email = email;
+
+	public void setCprice(int cprice) {
+		this.cprice = cprice;
 	}
 	
 }

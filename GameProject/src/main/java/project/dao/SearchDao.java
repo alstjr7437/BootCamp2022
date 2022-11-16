@@ -19,7 +19,7 @@ public class SearchDao {
 	      //1-2. "java:comp/env"에 해당하는 객체를 찾아서 envCtx에 삽입
 	      Context envCtx = (Context)initCtx.lookup("java:comp/env");
 	      //1-3. "jdbc/joypark"에 해당되는 객체를 찾아서 ds에 삽입
-	      DataSource ds = (DataSource)envCtx.lookup("jdbc/joyPark");
+	      DataSource ds = (DataSource)envCtx.lookup("jdbc/alstjr");
 	      //1-4. 커넥션 풀로 부터 커넥션 객체를 얻어냄
 	      Connection con = ds.getConnection();
 	      return con;
@@ -91,7 +91,7 @@ public class SearchDao {
 	// 다른 테이블의 기본 키들을 이중쿼리를 통해 장바구니에 표시할 게임 정보들을 불러옴
 	public ArrayList<SearchDto> SelectCartlist(CartDto dto) {
 		ArrayList<SearchDto> dtos = new ArrayList<SearchDto>();
-		String sql = "SELECT * FROM game WHERE gnum = ( SELECT gnum FROM cart WHERE email=? AND gnum=?);";
+		String sql = "SELECT * FROM game WHERE gnum = ( SELECT cgame FROM cart WHERE cuser=? AND cgame=?);";
 		int gnum = 0;
 		String gname = "";
 		int gprice = 0;
@@ -100,8 +100,8 @@ public class SearchDao {
 				PreparedStatement pstmt = con.prepareStatement(sql);	// SQL 실행 준비
 		)
 		{
-			pstmt.setNString(1, dto.getEmail());
-			pstmt.setInt(2, dto.getGnum());
+			pstmt.setNString(1, dto.getCuser());
+			pstmt.setInt(2, dto.getCgame());
 			
 		try (ResultSet rs = pstmt.executeQuery();) 
 		{

@@ -9,9 +9,11 @@
 	String email = request.getParameter("email");
 	String uname = request.getParameter("uname");
 	String pwd = request.getParameter("pwd");
+	String infor = request.getParameter("pwd");
+	int credit = 0;
 	
 	SignUpDao dao = new SignUpDao();
-	SignUpDto dto = new SignUpDto(email, uname, pwd);
+	SignUpDto dto = new SignUpDto(email, uname, pwd, infor, credit);
 	dao.insert(dto);
 	
 	response.sendRedirect("login.jsp?email="+ email);
