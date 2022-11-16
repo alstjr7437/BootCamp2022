@@ -67,13 +67,13 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<a href="DivisionInformation.jsp"><img class="d-block w-100" src="css/image/division.jpg" alt="Second slide" width=553px height=500px></a>
+				<a href="Information/DivisionInformation.jsp"><img class="d-block w-100" src="css/image/division.jpg" alt="Second slide" width=553px height=500px></a>
 			</div>
 		<div class="carousel-item">
-			<a href="EscapeFromTarkovInformation.jsp"><img class="d-block w-100" src="css/image/eft_logo_promo.jpg" alt="Second slide" width=553px height=500px></a>
+			<a href="Information/EscapeFromTarkovInformation.jsp"><img class="d-block w-100" src="css/image/eft_logo_promo.jpg" alt="Second slide" width=553px height=500px></a>
 		</div>
 		<div class="carousel-item">
-			<a href="h1z1Information.jsp"><img class="d-block w-100" src="css/image/h1z1.jpg" alt="Third slide" width=553px height=500px></a>
+			<a href="Information/h1z1Information.jsp"><img class="d-block w-100" src="css/image/h1z1.jpg" alt="Third slide" width=553px height=500px></a>
 		</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -91,23 +91,23 @@
 	<div id="famousTagCard">
 		<div class="card">
 			<div class="cardImageArea">
-				<a href="DarkSoulsInformation.jsp"><img src="css/image/Dark_souls_3_cover_art.jpg" alt=""></a>
+				<a href="Information/DarkSoulsInformation.jsp"><img src="css/image/Dark_souls_3_cover_art.jpg" alt=""></a>
 			</div>
 			<h4>Dark Souls lll</h4>
 			<p class="price">₩49,800</p>
 		</div>
 		<div class="card">
-			<a href="EldenRingInformation.jsp"><img src="css/image/eldenring.jpg" alt=""></a>
+			<a href="Information/EldenRingInformation.jsp"><img src="css/image/eldenring.jpg" alt=""></a>
 			<h4>Elden Ring</h4>
 			<p class="price">₩64,800</p>
 		</div>
 		<div class="card">
-			<a href="BattleFieldInformation.jsp"><img src="css/image/BF1.jpg" alt=""></a>
+			<a href="Information/BattleFieldInformation.jsp"><img src="css/image/BF1.jpg" alt=""></a>
 			<h4>BattleField 1™</h4>
 			<p class="price">₩11,000</p>
 		</div>
 		<div class="card">
-			<a href="EscapeFromTarkovInformation.jsp"><img src="css/image/eft.jpg" alt=""></a>
+			<a href="Information/EscapeFromTarkovInformation.jsp"><img src="css/image/eft.jpg" alt=""></a>
 			<h4>EscapeFromTarkov</h4>
 			<p class="price">₩55,800</p>
 		</div>
@@ -117,22 +117,22 @@
 	</div>
 	<div id="freeTagCard">
 		<div class="card">
-			<a href="csgoInformation.jsp"><img src="css/image/csgo.jpg" alt=""></a>
+			<a href="Information/csgoInformation.jsp"><img src="css/image/csgo.jpg" alt=""></a>
 			<h4>CS:GO</h4>
 			<p class="price">무료</p>
 		</div>
 		<div class="card">
-			<a href="WarthunderInformation.jsp"><img src="css/image/warThunder.jpg" alt=""></a>
+			<a href="Information/WarthunderInformation.jsp"><img src="css/image/warThunder.jpg" alt=""></a>
 			<h4>War Thunder</h4>
 			<p class="price">무료</p>
 		</div>
 		<div class="card">
-			<a href="WarframeInformation.jsp"><img src="css/image/warframe.jpg" alt=""></a>
+			<a href="Information/WarframeInformation.jsp"><img src="css/image/warframe.jpg" alt=""></a>
 			<h4>Warframe</h4>
 			<p class="price">무료</p>
 		</div>
 		<div class="card">
-			<a href="DeceitInformation.jsp"><img src="css/image/deceit.jpg" alt=""></a>
+			<a href="Information/DeceitInformation.jsp"><img src="css/image/deceit.jpg" alt=""></a>
 			<h4>Deceit</h4>
 			<p class="price">무료</p>
 		</div>
