@@ -1,8 +1,8 @@
-<%@page import="project.dto.CartDto"%>
-<%@page import="project.dao.CartDao"%>
-<%@page import="project.dto.SearchDto"%>
+<%@page import="cart.CartDto"%>
+<%@page import="cart.CartDao"%>
+<%@page import="game.SearchDto"%>
+<%@page import="game.SearchDao"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="project.dao.SearchDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
@@ -30,7 +30,7 @@
 </head>
 <body>
     <div id="header">
-        <a href="MainPage.jsp"><img src="css/image/Alogo.png" width=70px height=70px></a><h2>| cart</h2>
+        <a href="MainPage.do"><img src="css/image/Alogo.png" width=70px height=70px></a><h2>| cart</h2>
     </div>
     <h2 id="SearchTitle">장바구니</h2>
     <div id="ResultList">
@@ -73,17 +73,17 @@
 			
 			</div>
 			<div id="sum"><h3>합계 : <%=sum %>원 </h3></div>
-			<div id="pay"><a href="payCheck.jsp"><input type="button" id="btnPay" value="결제"></a></div>
+			<div id="pay"><a href="payCheck.do"><input type="button" id="btnPay" value="결제"></a></div>
         </div>
     </div>
 </body>
 <%
 	// 나온 결과물들을 div에 넣어줌(바쁘게 마감한다고 코드가 많이 더럽습니다 죄송합니다.)
 	for(CartDto cdto : cdtos) {
-		System.out.println(cdto.getEmail());
-		System.out.println(cdto.getGnum());
+		System.out.println(cdto.getCuser());
+		System.out.println(cdto.getCgame());
 	
-	CartDto dtoo = new CartDto(cdto.getGprice(), cdto.getGnum(), cdto.getEmail());
+	CartDto dtoo = new CartDto(cdto.getCuser(), cdto.getCgame(), cdto.getCprice());
 	ArrayList<SearchDto> dtos = dao.SelectCartlist(dtoo);
 	for(SearchDto dto : dtos) {
 		System.out.println(dto.getGname());

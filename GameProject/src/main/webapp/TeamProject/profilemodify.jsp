@@ -1,6 +1,6 @@
-<%@page import="project.dto.ProfileDto"%>
+<%@page import="signUp.ProfileDto"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="project.dao.ProfileDao"%>
+<%@page import="signUp.ProfileDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
@@ -101,7 +101,7 @@ p {
 
 </style>
 </head>
-<form action="profileUpdate.jsp" method="post">
+<form action="profileUpdate.do" method="post">
 <body>
 <h2>&nbsp;&nbsp;&nbsp;&nbsp;PROFILE</h2>
 
