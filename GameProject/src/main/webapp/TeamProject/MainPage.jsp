@@ -67,6 +67,7 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
+<<<<<<< HEAD
 				<a href="Information/DivisionInformation.do"><img class="d-block w-100" src="css/image/division.jpg" alt="Second slide" width=553px height=500px></a>
 			</div>
 		<div class="carousel-item">
@@ -74,6 +75,15 @@
 		</div>
 		<div class="carousel-item">
 			<a href="Information/h1z1Information.do"><img class="d-block w-100" src="css/image/h1z1.jpg" alt="Third slide" width=553px height=500px></a>
+=======
+				<a href="Information/DivisionInformation.do"><img class="d-block w-100" src="css/image/division.jpg" alt="Second slide" width=553px height=500px></a>
+			</div>
+		<div class="carousel-item">
+			<a href="Information/EscapeFromTarkovInformation.do"><img class="d-block w-100" src="css/image/eft_logo_promo.jpg" alt="Second slide" width=553px height=500px></a>
+		</div>
+		<div class="carousel-item">
+			<a href="Information/h1z1Information.do"><img class="d-block w-100" src="css/image/h1z1.jpg" alt="Third slide" width=553px height=500px></a>
+>>>>>>> f2cf019f82a6a2f795695fe367aa93a621286be4
 		</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -91,23 +101,39 @@
 	<div id="famousTagCard">
 		<div class="card">
 			<div class="cardImageArea">
+<<<<<<< HEAD
 				<a href="Information/DarkSoulsInformation.do"><img src="css/image/Dark_souls_3_cover_art.jpg" alt=""></a>
+=======
+				<a href="Information/DarkSoulsInformation.do"><img src="css/image/Dark_souls_3_cover_art.jpg" alt=""></a>
+>>>>>>> f2cf019f82a6a2f795695fe367aa93a621286be4
 			</div>
 			<h4>Dark Souls lll</h4>
 			<p class="price">₩49,800</p>
 		</div>
 		<div class="card">
+<<<<<<< HEAD
 			<a href="Information/EldenRingInformation.do"><img src="css/image/eldenring.jpg" alt=""></a>
+=======
+			<a href="Information/EldenRingInformation.do"><img src="css/image/eldenring.jpg" alt=""></a>
+>>>>>>> f2cf019f82a6a2f795695fe367aa93a621286be4
 			<h4>Elden Ring</h4>
 			<p class="price">₩64,800</p>
 		</div>
 		<div class="card">
+<<<<<<< HEAD
 			<a href="Information/BattleFieldInformation.do"><img src="css/image/BF1.jpg" alt=""></a>
+=======
+			<a href="Information/BattleFieldInformation.do"><img src="css/image/BF1.jpg" alt=""></a>
+>>>>>>> f2cf019f82a6a2f795695fe367aa93a621286be4
 			<h4>BattleField 1™</h4>
 			<p class="price">₩11,000</p>
 		</div>
 		<div class="card">
+<<<<<<< HEAD
 			<a href="Information/EscapeFromTarkovInformation.do"><img src="css/image/eft.jpg" alt=""></a>
+=======
+			<a href="Information/EscapeFromTarkovInformation.do"><img src="css/image/eft.jpg" alt=""></a>
+>>>>>>> f2cf019f82a6a2f795695fe367aa93a621286be4
 			<h4>EscapeFromTarkov</h4>
 			<p class="price">₩55,800</p>
 		</div>
@@ -117,22 +143,38 @@
 	</div>
 	<div id="freeTagCard">
 		<div class="card">
+<<<<<<< HEAD
 			<a href="Information/csgoInformation.do"><img src="css/image/csgo.jpg" alt=""></a>
+=======
+			<a href="Information/csgoInformation.do"><img src="css/image/csgo.jpg" alt=""></a>
+>>>>>>> f2cf019f82a6a2f795695fe367aa93a621286be4
 			<h4>CS:GO</h4>
 			<p class="price">무료</p>
 		</div>
 		<div class="card">
+<<<<<<< HEAD
 			<a href="Information/WarthunderInformation.do"><img src="css/image/warThunder.jpg" alt=""></a>
+=======
+			<a href="Information/WarthunderInformation.do"><img src="css/image/warThunder.jpg" alt=""></a>
+>>>>>>> f2cf019f82a6a2f795695fe367aa93a621286be4
 			<h4>War Thunder</h4>
 			<p class="price">무료</p>
 		</div>
 		<div class="card">
+<<<<<<< HEAD
 			<a href="Information/WarframeInformation.do"><img src="css/image/warframe.jpg" alt=""></a>
+=======
+			<a href="Information/WarframeInformation.do"><img src="css/image/warframe.jpg" alt=""></a>
+>>>>>>> f2cf019f82a6a2f795695fe367aa93a621286be4
 			<h4>Warframe</h4>
 			<p class="price">무료</p>
 		</div>
 		<div class="card">
+<<<<<<< HEAD
 			<a href="Information/DeceitInformation.do"><img src="css/image/deceit.jpg" alt=""></a>
+=======
+			<a href="Information/DeceitInformation.do"><img src="css/image/deceit.jpg" alt=""></a>
+>>>>>>> f2cf019f82a6a2f795695fe367aa93a621286be4
 			<h4>Deceit</h4>
 			<p class="price">무료</p>
 		</div>

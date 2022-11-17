@@ -75,4 +75,8 @@ SELECT * FROM signup;
 SELECT * FROM game;
 SELECT * FROM cart;
 SELECT cgame FROM cart WHERE cuser="alstjr7437@naver.com" AND cgame=2;
+<<<<<<< HEAD
 SELECT * FROM game WHERE gnum = ( SELECT cgame FROM cart WHERE cuser="alstjr7437@naver.com" AND cgame=2)
+=======
+SELECT * FROM game WHERE gnum = ( SELECT gnum FROM cart WHERE cuser="alstjr7437@naver.com" AND cgame=2)
+>>>>>>> f2cf019f82a6a2f795695fe367aa93a621286be4
