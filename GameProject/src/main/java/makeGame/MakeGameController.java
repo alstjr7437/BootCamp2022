@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("*.do")
 public class MakeGameController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
@@ -19,6 +18,10 @@ public class MakeGameController extends HttpServlet {
     	
     	String uri = request.getRequestURI();
     	String com = uri.substring(uri.lastIndexOf("/")+1, uri.lastIndexOf(".do"));
+    	
+    	if(com != null && com.equals("index")) { 
+    		viewPage = "/WEB-INF/TeamProject/IntroductionPage.jsp";
+    	}
     	
     	RequestDispatcher rd = request.getRequestDispatcher(viewPage);
     	rd.forward(request, response);
