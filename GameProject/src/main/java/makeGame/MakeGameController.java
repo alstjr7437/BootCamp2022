@@ -19,6 +19,7 @@ public class MakeGameController extends HttpServlet {
     	
     	String uri = request.getRequestURI();
     	String com = uri.substring(uri.lastIndexOf("/")+1, uri.lastIndexOf(".do"));
+    	System.out.println("현재 페이지는 " + com + "입니다.");
     	
     	if(com != null && com.equals("index")) { 
     		viewPage = "/WEB-INF/TeamProject/IntroductionPage.jsp";

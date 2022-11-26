@@ -9,10 +9,13 @@
 	ProfileDao dao = new ProfileDao();
 	String cmail = (String) session.getAttribute("email");
 	ArrayList<ProfileDto> dtos = dao.profileNameSearch(cmail);
+	String name = "";
+	String infor = "";
 	
 	for(ProfileDto dto : dtos) {
-		
-
+		name = dto.getName();
+		infor = dto.getinFor();
+	}
  %>
 <!DOCTYPE html>
 <html>
@@ -100,7 +103,7 @@
 	</style>
 </head>
 <body>
-	<form action="profileUpdate.sign" method="post">
+	<form action="profileUpdate.sign" method="post" >
 		<h2>&nbsp;&nbsp;&nbsp;&nbsp;PROFILE</h2>
 		
 		<div>
@@ -109,8 +112,9 @@
 		    <p style='width:70px; position: absolute; top: 33%; left: 0%;'>
 		    </p>
 		    <div>
-		    <h3> &nbsp;&nbsp;&nbsp;이름 </h3> <p> &nbsp;&nbsp;&nbsp; <textarea cols="80" rows="3" name="uname"><%=dto.getName()%></textarea></p>  
-		    <h3> &nbsp;&nbsp;&nbsp;소개 </h3> <p> &nbsp;&nbsp;&nbsp; <textarea cols="80" rows="5" name="infor"><%=dto.getinFor()%></textarea></p>
+		    <h3> &nbsp;&nbsp;&nbsp;이름 </h3> <p> &nbsp;&nbsp;&nbsp; <textarea cols="80" rows="3" name="uname"><%= name %></textarea></p>  
+		    <h3> &nbsp;&nbsp;&nbsp;소개 </h3> <p> &nbsp;&nbsp;&nbsp; <textarea cols="80" rows="5" name="infor"><%= infor %></textarea></p>
+  
 		    </div>
 		</div>
 		<br>
@@ -118,9 +122,7 @@
 		<p style='width:80px; position: absolute; top: 40%; left: 70%;'>
 		    <input type="submit" class="snip1535" value="COMPLETE">
 		</p>
-		<%
-			}
-		%>
+
 	</form>
 </body>
 </html>

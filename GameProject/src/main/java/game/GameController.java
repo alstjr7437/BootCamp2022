@@ -9,6 +9,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import cart.CartService;
+import cart.Cpay;
+
 @WebServlet("*.game")
 public class GameController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -19,6 +22,7 @@ public class GameController extends HttpServlet {
     	
     	String uri = request.getRequestURI();
     	String com = uri.substring(uri.lastIndexOf("/")+1, uri.lastIndexOf(".game"));
+    	System.out.println("현재 페이지는 " + com + "입니다.");
     	
     	if(com != null && com.equals("BattleFieldInformation")) { 
     		viewPage = "/TeamProject/Information/BattleFieldInformation.jsp";
@@ -44,7 +48,11 @@ public class GameController extends HttpServlet {
     		viewPage = "/TeamProject/SearchResult.jsp";
     	}  else if(com != null && com.equals("TagSearchResult")) { 
     		viewPage = "/TeamProject/TagSearchResult.jsp";
-    	} 
+    	}  else if(com != null && com.equals("GameInsert")) { 
+    		GameService service = new GInsertService();
+    		service.execute(request, response);
+    		viewPage = "/TeamProject/MainPage.sign";
+    	}
     	
     	
     	RequestDispatcher rd = request.getRequestDispatcher(viewPage);
