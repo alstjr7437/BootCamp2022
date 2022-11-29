@@ -11,7 +11,7 @@
 <title>Main Page</title>
 <link rel="stylesheet" href="TeamProject/css/main.css">
 <link rel="stylesheet" href="TeamProject/css/header.css">
-<script type="text/javascript" src="TeamProject/jsfolder/MainHeader.js?ver=1"></script>
+<script type="text/javascript" src="jsfolder/MainHeader.js"></script>
 </head>
 <%	
 	String email = (String)request.getAttribute("email"); 
@@ -77,7 +77,7 @@
 		</div>
 		<div class="carousel-item">
 			<a href="h1z1Information.game"><img class="d-block w-100" src="TeamProject/css/image/h1z1.jpg" alt="Third slide" width=553px height=500px></a>
-				<a href="DivisionInformation.game"><img class="d-block w-100" src="TeamProject/css/image/division.jpg" alt="Second slide" width=553px height=500px></a>
+				
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

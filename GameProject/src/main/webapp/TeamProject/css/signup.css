@@ -11,3 +11,4 @@ body {background-image: url("../image/Battlefield_1_they_shall_not_pass_dlc-2017
 .input {border: none; border-bottom-style: solid; border-bottom-color: gray; width: 80%; height: 10%;margin-bottom: 10%; padding-left: 60px; font-family: 'SuseongDotum';}
 .inputCheck {width: 20px; height: 20px; position: relative; top: 3px; margin-right: 10px; margin-bottom: 5%;}
 #signupArea {position: absolute; left: 25%; top: 8%; background-color: 	white; padding-left: 3%; color: #B0C4DE; width: 50%; height: 100%; opacity: 0.8; overflow-y: scroll; overflow-x: hidden; margin-bottom: 100px;}
+#inputPhone {background-image: url("../image/phoneimg.png"); background-repeat: no-repeat; background-size: 3% 50%; background-position: 0px 10px;}

@@ -6,7 +6,7 @@
 	<link
     rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	<link rel="stylesheet" href="TeamProject/css/signup.css">
+	<link rel="stylesheet" href="css/signup.css">
 <meta charset="UTF-8">
 <title>회원가입</title>
 </head>
@@ -15,12 +15,12 @@
 	<div id="signupArea">
 		<div id="logoHeader">
 			<div id="logo">
-			<img src="TeamProject/css/image/Alogo.png" alt="이미지 없음" width="100" height="100"><h1>JOYPARK</h1>
+			<img src="css/image/Alogo.png" alt="이미지 없음" width="100" height="100"><h1>JOYPARK</h1>
 			</div>
 		</div>
 		<div id="insertInfo">
-			<input type="email" placeholder="이메일" autofocus="on" id="inputEmail" class="input" autocomplete="off"><br>
-			<input type="email" placeholder="이메일 확인" id="inputEmail" class="input" autocomplete="off" name="email"><br>
+			<input type="email" placeholder="이메일" autofocus="on" id="inputEmail" class="input" autocomplete="off" name="email"><br>
+			<input type="text" placeholder="전화번호" id="inputPhone" class="input" autocomplete="off" name="phone"><br>
 			<input type="text" placeholder="닉네임" class="input" id="userName" name="uname" autocomplete="off"><br>
 			<input type="password" placeholder="비밀번호" id="inputPwd" class="input" name="pwd"><br>
 			<input type="checkbox" class="inputCheck">JOYPARK의 이용 약관 및 판매 약관을 이해했으며, 개인정보처리방침에 동의합니다.<br>

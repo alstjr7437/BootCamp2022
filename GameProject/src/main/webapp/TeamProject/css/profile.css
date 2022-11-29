@@ -1,85 +1,66 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-#profileimg {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 200px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.div{ 
-    position: relative;
-}
-p {
-    margin: 30px;
-}
-.text .image{ margin: 10;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-}
-@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
-.snip1535 {
-  background-color: #c47135;
-  border: none;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'BenchNine', Arial, sans-serif;
-  font-size: 1em;
-  font-size: 15px;
-  line-height: 1em;
-  margin: 15px 40px;
-  outline: none;
-  padding: 12px 40px 10px;
-  position: relative;
-  text-transform: uppercase;
-  font-weight: 700;
-  writing-mode: horizontal-tb;
-}
-.snip1535:before,
-.snip1535:after {
-  border-color: transparent;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  border-style: solid;
-  border-width: 0;
-  content: "";
-  height: 24px;
-  position: absolute;
-  width: 24px;
-}
-.snip1535:before {
-  border-color: #c47135;
-  border-right-width: 2px;
-  border-top-width: 2px;
-  right: -5px;
-  top: -5px;
-}
-.snip1535:after {
-  border-bottom-width: 2px;
-  border-color: #c47135;
-  border-left-width: 2px;
-  bottom: -5px;
-  left: -5px;
-}
-.snip1535:hover,
-.snip1535.hover {
-  background-color: #c47135;
-}
-.snip1535:hover:before,
-.snip1535.hover:before,
-.snip1535:hover:after,
-.snip1535.hover:after {
-  height: 100%;
-  width: 100%;
-}
-
-.card button:hover {
-  opacity: 0.7;
-}   
-
-
+body {
+            margin: 0;
+            padding: 0;
+            
+        }
+        #section {
+            position: absolute;
+            height: 20rem;
+            width: 75%;
+            top: 10.1%;
+            margin-left: 25%;
+            overflow: auto;
+            box-shadow: 2px 2px;
+            top: 10%;
+            background-image: url("image/background1.jpg");
+            background-size: 100% 100%;
+        }
+        #section > img {
+            position: absolute;
+            margin: 4rem;
+            margin-left: 5rem;
+            width: 11rem;
+            height: 11rem;
+            border-style: solid;
+            border-color: green;
+            background-color: white;
+        }
+        #section > h2 {
+            position: absolute;
+            top: 2.5rem;
+            left: 20rem;
+        }
+        #section > h3 {
+            position: absolute;
+            left: 20rem;
+            margin-top: 8rem;
+        }
+        #nav {
+        	position: absolute;
+        	width: 100%;
+        	top: 16.2%;
+        	border-style: solid none solid none;
+        	background-color: white;
+        }
+        #nav > ul > li {
+        	margin-bottom: 25%;
+        	position: absoulte;
+        	list-style: none;
+      		width: 100%;
+      		height: 100%;
+        }
+		#navArea {
+			position: fixed;
+			height: 100%;
+			width: 25%;
+			background-color: #B0C4DE;
+			top: 0;
+		}
+		#btnModify {
+			position: absolute;
+			left: 80%;
+			top: 10%;
+			width: 10%;
+			height: 20%;
+			border-style: none;
+		}
