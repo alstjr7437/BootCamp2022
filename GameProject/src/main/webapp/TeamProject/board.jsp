@@ -6,18 +6,18 @@
 <meta charset="EUC-KR">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-<link rel="stylesheet" href="TeamProject/css/header.css">
-<link rel="stylesheet" href="TeamProject/css/board.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/board.css">
 <title>게시판</title>
 </head>
 <body>
 	<div id="header">
-	  <a href="MainPage.sign"><img src="TeamProject/css/image/Alogo.png" width=70px height=70px></a><h2>| Board</h2>
+	  <a href="MainPage.sign"><img src="css/image/Alogo.png" width=70px height=70px></a><h2>| Board</h2>
 	</div>
 	<div class="container">
 	<table class="table table-hover">
 		<caption id="bgcaption"><h1>게시판</h1></caption>
-		<caption id="smcaption"><a href="boardmodify.bmd"><button id="btnwrite">게시글 작성</button></a></caption>
+		<caption id="smcaption"><a href="boardwrite.jsp"><button id="btnwrite">게시글 작성</button></a></caption>
 		<caption>
 			<div class="d-flex justify-content-center">
 				<nav aria-label="Page navigation example">
