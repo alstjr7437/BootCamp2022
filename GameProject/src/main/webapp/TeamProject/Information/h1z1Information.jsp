@@ -19,7 +19,7 @@
         <a href="MainPage.sign"><img src="TeamProject/css/image/Alogo.png" width=70px height=70px></a><h2>| GAME</h2>
     </div>
     <div id="imageSection">
-        <img src="css/image/h1z1info.jpg" width="100%" height="100%">
+        <img src="TeamProject/css/image/h1z1info.jpg" width="100%" height="100%">
                 <div id="FirstInfo">
                 <h1 id="GameTitle">H1Z1</h1>
                 <h3 id="Developer">Daybreak Game Company</h3>

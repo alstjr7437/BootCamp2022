@@ -36,7 +36,6 @@
 <%
 	//세션값을 받아와서 이메일 이외 정보인 해당 유저의 이름과 정보글을 가져와서 표시함
 	String email = (String)session.getAttribute("email");
-	System.out.println(email);
 			
 			ProfileDao dao = new ProfileDao();
 			ArrayList<ProfileDto> dtos = dao.profileNameSearch(email);

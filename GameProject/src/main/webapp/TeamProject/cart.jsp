@@ -24,13 +24,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="TeamProject/TeamProject/css/header.css">
     <link rel="stylesheet" href="TeamProject/TeamProject/css/search.css">
+=======
+    <link rel="stylesheet" href="TeamProject/css/header.css">
+    <link rel="stylesheet" href="TeamProject/css/search.css">
+>>>>>>> 6ea58a6029b0dc4c6ed58dddeba9ac12f906399c
     <title>cart</title>
 </head>
 <body>
     <div id="header">
+<<<<<<< HEAD
         <a href="MainPage.do"><img src="TeamProject/TeamProject/css/image/Alogo.png" width=70px height=70px></a><h2>| cart</h2>
+=======
+        <a href="MainPage.sign"><img src="TeamProject/css/image/Alogo.png" width=70px height=70px></a><h2>| cart</h2>
+>>>>>>> 6ea58a6029b0dc4c6ed58dddeba9ac12f906399c
     </div>
     <h2 id="SearchTitle">장바구니</h2>
     <div id="ResultList">
@@ -73,22 +82,17 @@
 			
 			</div>
 			<div id="sum"><h3>합계 : <%=sum %>원 </h3></div>
-			<div id="pay"><a href="payCheck.do"><input type="button" id="btnPay" value="결제"></a></div>
+			<div id="pay"><a href="Cpay.cart"><input type="button" id="btnPay" value="결제"></a></div>
         </div>
     </div>
 </body>
 <%
 	// 나온 결과물들을 div에 넣어줌(바쁘게 마감한다고 코드가 많이 더럽습니다 죄송합니다.)
 	for(CartDto cdto : cdtos) {
-		System.out.println(cdto.getCuser());
-		System.out.println(cdto.getCgame());
 	
 	CartDto dtoo = new CartDto(cdto.getCuser(), cdto.getCgame(), cdto.getCprice());
 	ArrayList<SearchDto> dtos = dao.SelectCartlist(dtoo);
 	for(SearchDto dto : dtos) {
-		System.out.println(dto.getGname());
-		System.out.println(dto.getGnum());
-		System.out.println(dto.getGprice());
 %>
 	<script>
 	document.querySelector("#list<%=dto.getGnum()%>").append(document.createElement("img"));
