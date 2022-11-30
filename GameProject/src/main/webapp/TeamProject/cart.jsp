@@ -184,21 +184,19 @@
 <%
 	}
 %>
-	<script>
+	<script>  
 	document.querySelector("#list<%=dto.getGnum()%>").style.height="20%";
 	document.querySelector("#list<%=dto.getGnum()%>").style.borderBottomStyle="solid";
-	document.querySelector("#list<%=dto.getGnum()%> > img ").style.width="80px";
-	document.querySelector("#list<%=dto.getGnum()%> > img ").style.height="80px";
-	document.querySelector("#list<%=dto.getGnum()%> > img ").style.margin="25px";
-	document.querySelector("#list<%=dto.getGnum()%> > img ").style.marginLeft="40px";
+	document.querySelector("#list<%=dto.getGnum()%> > img ").style.width="140px";
+	document.querySelector("#list<%=dto.getGnum()%> > img ").style.height="80%";
 	document.querySelector("#list<%=dto.getGnum()%> > h3").style.position="relative";
 	document.querySelector("#list<%=dto.getGnum()%> > h3").style.width="40%";
 	document.querySelector("#list<%=dto.getGnum()%> > h3").style.left="43%";
-	document.querySelector("#list<%=dto.getGnum()%> > h3").style.top="-60%";
+	document.querySelector("#list<%=dto.getGnum()%> > h3").style.top="-55%";
 	document.querySelector("#list<%=dto.getGnum()%> > h4").style.position="relative";
 	document.querySelector("#list<%=dto.getGnum()%> > h4").style.width="40%";
 	document.querySelector("#list<%=dto.getGnum()%> > h4").style.left="82%";
-	document.querySelector("#list<%=dto.getGnum()%> > h4").style.top="-85%";
+	document.querySelector("#list<%=dto.getGnum()%> > h4").style.top="-65%";
 	</script>
 <%
 		}

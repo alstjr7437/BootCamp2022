@@ -103,7 +103,7 @@
 	</style>
 </head>
 <body>
-	<form action="profileUpdate.sign" method="post" >
+	<form action="profileUpdate.sign" method="post" name = "form" id = "form">
 		<h2>&nbsp;&nbsp;&nbsp;&nbsp;PROFILE</h2>
 		
 		<div>
@@ -120,9 +120,26 @@
 		<br>
 		<br>
 		<p style='width:80px; position: absolute; top: 40%; left: 70%;'>
-		    <input type="submit" class="snip1535" value="COMPLETE">
+		    <input type="submit" onclick = "insert()"class="snip1535" value="COMPLETE">
 		</p>
 
 	</form>
 </body>
+<script type ="text/javascript">
+var doubleSubmitFlag = false;
+function doubleSubmitCheck(){
+    if(doubleSubmitFlag){
+        return doubleSubmitFlag;
+    }else{
+        doubleSubmitFlag = true;
+        return false;
+    }
+}
+
+function insert(){
+    if(doubleSubmitCheck()) return;
+
+    alert("등록");
+}
+</script>
 </html>
