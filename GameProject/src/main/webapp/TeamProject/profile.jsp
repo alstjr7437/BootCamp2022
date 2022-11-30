@@ -7,29 +7,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="shortcut icon" href="#">
 <link rel="stylesheet" href="TeamProject/css/header.css">
 <link rel="stylesheet" href="TeamProject/css/profile.css">
+<link rel="stylesheet" href="jsfolder/profilechange.js">
 </head>
 <body>
-<div id="header">
-  <a href="MainPage.sign"><img src="TeamProject/css/image/Alogo.png" width=70px height=70px></a><h2>| PROFILE</h2>
-</div>
-<h2>&nbsp;&nbsp;&nbsp;&nbsp;PROFILE</h2>
-
-<div>
-    <p>
-    <img src="TeamProject/css/image/user2.png" id="profileimg"  align = "left">
-    <div>
-    <h3> &nbsp;&nbsp;&nbsp;이름 </h3> <p id="pname"> &nbsp;&nbsp;&nbsp;GPS </p>  
-    <h3> &nbsp;&nbsp;&nbsp;소개 </h3> <p id="pinfo"> &nbsp;&nbsp;&nbsp;안녕하세요 GPS입니다! </p>
+	<div id="header">
+	  <a href="MainPage.sign"><img src="TeamProject/css/image/Alogo.png" width=70px height=70px></a><h2>| PROFILE</h2>
+	</div>
+	<h1>profile</h1>
+	
+    <div id="section">
+         <img src="TeamProject/css/image/unknownAvatar.jpg" alt="이미지 없음" srcset="">
+         <h2>이름</h2>
+         <h3>자기 소개</h3>
+         <a href="profilemodify.sign"><button id="btnModify">프로필 수정</button></a>
     </div>
-</div>
-<br>
-<br>
-<p style='width:80px; position: absolute; top: 25%; left: 70%;'>
-    <a href="profilemodify.sign"><button class="snip1535">Modify</button></a>
-</p>
+    <div id="navArea">
+	    <div id="nav">
+	    	<ul>
+	    		<li>ㅇㅇ</li>
+	    		<li>ㅇㅇ</li>
+	    		<li>ㅇㅇ</li>
+	    	</ul>
+	    </div>
+    </div>
 </body>
 <%
 	//세션값을 받아와서 이메일 이외 정보인 해당 유저의 이름과 정보글을 가져와서 표시함
