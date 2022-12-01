@@ -1,4 +1,4 @@
-body {background-color: #d0d8e2;}
+resources/body {background-color: #d0d8e2;}
 	#icons {position: absolute; left: 85%; top: 10px; width: 250px; height: 50px;}
 	#icons img {display: inline; margin-right: 10px;}
 	#searchIn {position: absolute; left: -400px; width: 350px; height: 40px; border-radius: 50px; top: 10px; background-image: url("../image/search.png"); background-size: 10% 80%; background-repeat: no-repeat; background-position-y: center; padding-left: 50px; padding-right: 40px; border-width: 1px;}

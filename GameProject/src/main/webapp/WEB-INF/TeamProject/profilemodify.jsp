@@ -108,7 +108,7 @@
 		
 		<div>
 		    <p>
-		    <img src="TeamProject/css/image/user2.png"  align = "left">
+		    <img src="resources/css/image/user2.png"  align = "left">
 		    <p style='width:70px; position: absolute; top: 33%; left: 0%;'>
 		    </p>
 		    <div>

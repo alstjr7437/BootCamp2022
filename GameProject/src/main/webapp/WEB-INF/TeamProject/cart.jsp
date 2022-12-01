@@ -24,13 +24,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="TeamProject/css/header.css">
-    <link rel="stylesheet" href="TeamProject/css/search.css">
+    <link rel="stylesheet" href="resources/css/header.css">
+    <link rel="stylesheet" href="resources/css/search.css">
     <title>cart</title>
 </head>
 <body>
     <div id="header">
-        <a href="MainPage.sign"><img src="TeamProject/css/image/Alogo.png" width=70px height=70px></a><h2>| cart</h2>
+        <a href="MainPage.sign"><img src="resources/css/image/Alogo.png" width=70px height=70px></a><h2>| cart</h2>
     </div>
     <h2 id="SearchTitle">장바구니</h2>
     <div id="ResultList">
@@ -96,7 +96,7 @@
 		case 1:
 %>
 		<script>
-		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "TeamProject/css/image/Dark_souls_3_cover_art.jpg");
+		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "resources/css/image/Dark_souls_3_cover_art.jpg");
 		document.querySelector("#list<%=dto.getGnum()%> > h3").innerHTML="<%=dto.getGname()%>";
 		document.querySelector("#list<%=dto.getGnum()%> > h4").innerHTML="<%=dto.getGprice()%>원";
 		</script>
@@ -105,7 +105,7 @@
 		case 2:
 %>
 		<script>
-		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "TeamProject/css/image/eldenring.jpg");
+		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "resources/css/image/eldenring.jpg");
 		document.querySelector("#list<%=dto.getGnum()%> > h3").innerHTML="<%=dto.getGname()%>";
 		document.querySelector("#list<%=dto.getGnum()%> > h4").innerHTML="<%=dto.getGprice()%>원";
 		</script>
@@ -114,7 +114,7 @@
 		case 3:
 %>
 		<script>
-		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "TeamProject/css/image/BF1.jpg");
+		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "resources/css/image/BF1.jpg");
 		document.querySelector("#list<%=dto.getGnum()%> > h3").innerHTML="<%=dto.getGname()%>";
 		document.querySelector("#list<%=dto.getGnum()%> > h4").innerHTML="<%=dto.getGprice()%>원";
 		</script>
@@ -123,7 +123,7 @@
 		case 4:
 %>
 		<script>
-		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "TeamProject/css/image/eft.jpg");
+		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "resources/css/image/eft.jpg");
 		document.querySelector("#list<%=dto.getGnum()%> > h3").innerHTML="<%=dto.getGname()%>";
 		document.querySelector("#list<%=dto.getGnum()%> > h4").innerHTML="<%=dto.getGprice()%>원";
 		</script>
@@ -132,7 +132,7 @@
 		case 5:
 %>
 		<script>
-		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "TeamProject/css/image/csgo.jpg");
+		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "resources/css/image/csgo.jpg");
 		document.querySelector("#list<%=dto.getGnum()%> > h3").innerHTML="<%=dto.getGname()%>";
 		document.querySelector("#list<%=dto.getGnum()%> > h4").innerHTML="<%=dto.getGprice()%>원";
 		</script>
@@ -141,7 +141,7 @@
 		case 6:
 %>
 		<script>
-		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "TeamProject/css/image/warThunder.jpg");
+		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "resources/css/image/warThunder.jpg");
 		document.querySelector("#list<%=dto.getGnum()%> > h3").innerHTML="<%=dto.getGname()%>";
 		document.querySelector("#list<%=dto.getGnum()%> > h4").innerHTML="<%=dto.getGprice()%>원";
 		</script>
@@ -150,7 +150,7 @@
 		case 7:
 %>
 		<script>
-		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "TeamProject/css/image/warframe.jpg");
+		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "resources/css/image/warframe.jpg");
 		document.querySelector("#list<%=dto.getGnum()%> > h3").innerHTML="<%=dto.getGname()%>";
 		document.querySelector("#list<%=dto.getGnum()%> > h4").innerHTML="<%=dto.getGprice()%>원";
 		</script>
@@ -159,7 +159,7 @@
 		case 8:
 %>
 		<script>
-		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "TeamProject/css/image/deceit.jpg");
+		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "resources/css/image/deceit.jpg");
 		document.querySelector("#list<%=dto.getGnum()%> > h3").innerHTML="<%=dto.getGname()%>";
 		document.querySelector("#list<%=dto.getGnum()%> > h4").innerHTML="<%=dto.getGprice()%>원";
 		</script>
@@ -168,7 +168,7 @@
 		case 9:
 %>
 		<script>
-		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "TeamProject/css/image/division.jpg");
+		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "resources/css/image/division.jpg");
 		document.querySelector("#list<%=dto.getGnum()%> > h3").innerHTML="<%=dto.getGname()%>";
 		document.querySelector("#list<%=dto.getGnum()%> > h4").innerHTML="<%=dto.getGprice()%>원";
 		</script>
@@ -177,7 +177,7 @@
 		case 10:
 %>
 		<script>
-		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "TeamProject/css/image/h1z1.jpg");
+		document.querySelector("#list<%=dto.getGnum()%> > img ").setAttribute("src", "resources/css/image/h1z1.jpg");
 		document.querySelector("#list<%=dto.getGnum()%> > h3").innerHTML="<%=dto.getGname()%>";
 		document.querySelector("#list<%=dto.getGnum()%> > h4").innerHTML="<%=dto.getGprice()%>원";
 		</script>

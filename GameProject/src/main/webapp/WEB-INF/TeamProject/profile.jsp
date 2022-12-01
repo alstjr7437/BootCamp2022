@@ -7,18 +7,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="TeamProject/css/header.css">
-<link rel="stylesheet" href="TeamProject/css/profile.css">
-<link rel="stylesheet" href="TeamProject/jsfolder/profilechange.js">
+<link rel="stylesheet" href="resources/css/header.css">
+<link rel="stylesheet" href="resources/css/profile.css">
+<link rel="stylesheet" href="resources/jsfolder/profilechange.js">
 </head>
 <body>
 	<div id="header">
-	  <a href="MainPage.sign"><img src="TeamProject/css/image/Alogo.png" width=70px height=70px></a><h2>| PROFILE</h2>
+	  <a href="MainPage.sign"><img src="resources/css/image/Alogo.png" width=70px height=70px></a><h2>| PROFILE</h2>
 	</div>
 	<h1>profile</h1>
 	
     <div id="section">
-         <img src="TeamProject/css/image/unknownAvatar.jpg" alt="이미지 없음" srcset="">
+         <img src="resources/css/image/unknownAvatar.jpg" alt="이미지 없음" srcset="">
          <h2>이름</h2>
          <h3>자기 소개</h3>
          <a href="profilemodify.sign"><button id="btnModify">프로필 수정</button></a>

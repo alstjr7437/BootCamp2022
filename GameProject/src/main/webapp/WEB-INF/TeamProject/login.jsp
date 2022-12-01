@@ -12,14 +12,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="TeamProject/css/login.css">
+<link rel="stylesheet" href="resources/css/login.css">
 <meta charset="UTF-8">
 <title>로그인</title>
 </head>
 <body>
 <form action="LoginCheck.sign" method="post">
 	<div id="imgArea">
-		<img src="TeamProject/css/image/Alogo.png" alt="이미지 없음" width="100" height="100">
+		<img src="resources/css/image/Alogo.png" alt="이미지 없음" width="100" height="100">
 		<div id="loginBack">
 			<div id="login">
 				<input type="text" placeholder="이메일 입력" id="putId" class="inputs" autocomplete="off" autofocus="on" name="lemail"><br>
