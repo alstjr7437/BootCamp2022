@@ -25,11 +25,11 @@ public class CartController extends HttpServlet {
     	System.out.println("현재 페이지는 " + com + "입니다.");
 
     	if(com != null && com.equals("cart")) { 
-    		viewPage = "/TeamProject/cart.jsp";
+    		viewPage = "/WEB-INF/TeamProject/cart.jsp";
     	} else if(com != null && com.equals("Cpay")) { 
     		CartService service = new Cpay();
     		service.execute(request, response);
-    		viewPage = "/TeamProject/cart.cart";
+    		viewPage = "/WEB-INF/TeamProject/cart.cart";
     	}
     	
     	

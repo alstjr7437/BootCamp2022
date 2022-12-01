@@ -24,22 +24,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="TeamProject/TeamProject/css/header.css">
-    <link rel="stylesheet" href="TeamProject/TeamProject/css/search.css">
-=======
     <link rel="stylesheet" href="TeamProject/css/header.css">
     <link rel="stylesheet" href="TeamProject/css/search.css">
->>>>>>> 6ea58a6029b0dc4c6ed58dddeba9ac12f906399c
     <title>cart</title>
 </head>
 <body>
     <div id="header">
-<<<<<<< HEAD
-        <a href="MainPage.do"><img src="TeamProject/TeamProject/css/image/Alogo.png" width=70px height=70px></a><h2>| cart</h2>
-=======
         <a href="MainPage.sign"><img src="TeamProject/css/image/Alogo.png" width=70px height=70px></a><h2>| cart</h2>
->>>>>>> 6ea58a6029b0dc4c6ed58dddeba9ac12f906399c
     </div>
     <h2 id="SearchTitle">장바구니</h2>
     <div id="ResultList">

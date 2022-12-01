@@ -9,7 +9,7 @@
 <head>
 <link rel="stylesheet" href="TeamProject/css/header.css">
 <link rel="stylesheet" href="TeamProject/css/profile.css">
-<link rel="stylesheet" href="jsfolder/profilechange.js">
+<link rel="stylesheet" href="TeamProject/jsfolder/profilechange.js">
 </head>
 <body>
 	<div id="header">

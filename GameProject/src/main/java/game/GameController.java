@@ -25,33 +25,33 @@ public class GameController extends HttpServlet {
     	System.out.println("현재 페이지는 " + com + "입니다.");
     	
     	if(com != null && com.equals("BattleFieldInformation")) { 
-    		viewPage = "/TeamProject/Information/BattleFieldInformation.jsp";
+    		viewPage = "/WEB-INF/TeamProject/Information/BattleFieldInformation.jsp";
     	} else if(com != null && com.equals("csgoInformation")) { 
-    		viewPage = "/TeamProject/Information/csgoInformation.jsp";
+    		viewPage = "/WEB-INF/TeamProject/Information/csgoInformation.jsp";
     	} else if(com != null && com.equals("DarkSoulsInformation")) { 
-    		viewPage = "/TeamProject/Information/DarkSoulsInformation.jsp";
+    		viewPage = "/WEB-INF/TeamProject/Information/DarkSoulsInformation.jsp";
     	} else if(com != null && com.equals("DeceitInformation")) { 
-    		viewPage = "/TeamProject/Information/DeceitInformation.jsp";
+    		viewPage = "/WEB-INF/TeamProject/Information/DeceitInformation.jsp";
     	} else if(com != null && com.equals("DivisionInformation")) { 
-    		viewPage = "/TeamProject/Information/DivisionInformation.jsp";
+    		viewPage = "/WEB-INF/TeamProject/Information/DivisionInformation.jsp";
     	} else if(com != null && com.equals("EldenRingInformation")) { 
-    		viewPage = "/TeamProject/Information/EldenRingInformation.jsp";
+    		viewPage = "/WEB-INF/TeamProject/Information/EldenRingInformation.jsp";
     	} else if(com != null && com.equals("EscapeFromTarkovInformation")) { 
-    		viewPage = "/TeamProject/Information/EscapeFromTarkovInformation.jsp";
+    		viewPage = "/WEB-INF/TeamProject/Information/EscapeFromTarkovInformation.jsp";
     	} else if(com != null && com.equals("h1z1Information")) { 
-    		viewPage = "/TeamProject/Information/h1z1Information.jsp";
+    		viewPage = "/WEB-INF/TeamProject/Information/h1z1Information.jsp";
     	} else if(com != null && com.equals("WarframeInformation")) { 
-    		viewPage = "/TeamProject/Information/WarframeInformation.jsp";
+    		viewPage = "/WEB-INF/TeamProject/Information/WarframeInformation.jsp";
     	} else if(com != null && com.equals("WarthunderInformation")) { 
-    		viewPage = "/TeamProject/Information/WarthunderInformation.jsp";
+    		viewPage = "/WEB-INF/TeamProject/Information/WarthunderInformation.jsp";
     	} else if(com != null && com.equals("SearchResult")) { 
-    		viewPage = "/TeamProject/SearchResult.jsp";
+    		viewPage = "/WEB-INF/TeamProject/SearchResult.jsp";
     	}  else if(com != null && com.equals("TagSearchResult")) { 
-    		viewPage = "/TeamProject/TagSearchResult.jsp";
+    		viewPage = "/WEB-INF/TeamProject/TagSearchResult.jsp";
     	}  else if(com != null && com.equals("GameInsert")) { 
     		GameService service = new GInsertService();
     		service.execute(request, response);
-    		viewPage = "/TeamProject/MainPage.sign";
+    		viewPage = "/WEB-INF/TeamProject/MainPage.sign";
     	}
     	
     	
