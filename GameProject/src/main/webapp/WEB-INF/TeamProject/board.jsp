@@ -6,13 +6,13 @@
 <meta charset="EUC-KR">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-<link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/board.css">
+<link rel="stylesheet" href="resources/css/header.css">
+<link rel="stylesheet" href="resources/css/board.css">
 <title>게시판</title>
 </head>
 <body>
 	<div id="header">
-	  <a href="MainPage.sign"><img src="css/image/Alogo.png" width=70px height=70px></a><h2>| Board</h2>
+	  <a href="MainPage.sign"><img src="resources/css/image/Alogo.png" width=70px height=70px></a><h2>| Board</h2>
 	</div>
 	<div class="container">
 	<table class="table table-hover">
