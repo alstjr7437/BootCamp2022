@@ -31,6 +31,7 @@ body {background-color: #d0d8e2;}
    #carteLi {position: relative; left: 80px; bottom: 50px; width: 10%;}
    #carteLi2 {position: relative; left: 500px; bottom: 50px; width: 10%;}
    #carteLi3 {position: relative; left: 800px; bottom: 50px; width: 10%;}
+   #carteLi4 {position: relative; left: 1000px; bottom: 50px; width: 15%;}
    .cl > ul {background-color: black;}
    .carousel-control-prev {z-index: 1;}
    .carousel-control-next {z-index: 1;}

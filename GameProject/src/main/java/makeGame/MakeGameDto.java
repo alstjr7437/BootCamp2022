@@ -8,6 +8,7 @@ public class MakeGameDto {
 	private String mtag;
 	private String mfile;
 	private String mwriter;
+	private int mview;
 	private Date mdate;
 	public int getMnum() {
 		return mnum;
@@ -39,6 +40,12 @@ public class MakeGameDto {
 	public void setMwriter(String mwriter) {
 		this.mwriter = mwriter;
 	}
+	public int getMview() {
+		return mview;
+	}
+	public void setMview(int mview) {
+		this.mview = mview;
+	}
 	public Date getMdate() {
 		return mdate;
 	}
@@ -46,15 +53,17 @@ public class MakeGameDto {
 		this.mdate = mdate;
 	}
 	
-	public MakeGameDto(int mnum, String mtitle, String mtag, String mfile, String mwriter, Date mdate) {
+	public MakeGameDto(int mnum, String mtitle, String mtag, String mfile, String mwriter, int mview, Date mdate) {
 		this.mnum = mnum;
 		this.mtitle = mtitle;
 		this.mtag = mtag;
 		this.mfile = mfile;
 		this.mwriter = mwriter;
+		this.mview = mview;
 		this.mdate = mdate;
 	}
 	
 	public MakeGameDto() {}
+
 
 }

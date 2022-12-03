@@ -47,7 +47,6 @@ public class BoardController extends HttpServlet {
     		BoardService service = new BUpdateService();
     		service.execute(request, response);
     		int bnum = Integer.parseInt(request.getParameter("bnum"));
-    		System.out.println(bnum);
     		viewPage = "/WEB-INF/TeamProject/boardView.board?bnum="+bnum;
     	} 
     	
