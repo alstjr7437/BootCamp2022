@@ -19,7 +19,6 @@ public class BoardController extends HttpServlet {
     	String viewPage = null;
     	
     	HttpSession session = request.getSession();
-    	int category = (int) session.getAttribute("category");
     	
     	String uri = request.getRequestURI();
     	String com = uri.substring(uri.lastIndexOf("/")+1, uri.lastIndexOf(".board"));
@@ -34,6 +33,7 @@ public class BoardController extends HttpServlet {
     	} else if(com != null && com.equals("BInsert")) { 
     		BoardService service = new BInsertService();
     		service.execute(request, response);
+        	int category = (int) session.getAttribute("category");
     		viewPage = "board.board?category="+category;
     		System.out.println(viewPage);
     	}
