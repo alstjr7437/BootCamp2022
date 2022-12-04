@@ -154,8 +154,8 @@ public class CartDao {
 		return sum;
 	}
 	// email로 로그인한 유저의 장바구니 안을 결제 했을때 비워버림
-	public void payClearCart(String cuser) {
-		String sql = "delete from cart where cuser=?";
+	public void payClearCart(String cuser, int sum) {
+		String sql = "delete from cart where cuser = ?";
 		try(
 			Connection con = getConnection();	// 커넥션 얻기
 			PreparedStatement pstmt = con.prepareStatement(sql);	// SQL 실행 준비

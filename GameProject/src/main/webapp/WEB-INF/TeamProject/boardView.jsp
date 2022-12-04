@@ -42,11 +42,11 @@
       <button onClick="location.href='boardUpdate.board?bnum=${dto.bnum}'" class="btn" id="write">수정</button>
       <a href="board.board?category=<%=category%>"><button class="btn" id="cancel">돌아가기</button></a>
    </div>
-            <section>
+     <section>
            <div class="cobox">
               <!-- 댓글수를 위한 변수 가져오기 -->
                <h2 class="coh3">댓글 </h2>
-               <hr class><br>
+               <hr><br>
                
            <!-- 댓글 정보 가져와서 넣어주기 -->
            <% for(CommentsDto dto : dtos){ %>
@@ -67,6 +67,7 @@
                <hr class="st4"><br>
                <!-- 댓글 추가를 위한 form -->
                <form class="validation-form" novalidate action="CInsert.cmt">
+               
                    <div id="wtComment">
                         <h3 id="nmSp"><span><%=email%></span></h3>
                         <textarea name="cotag" id="cotag" cols="128" rows="8"></textarea>

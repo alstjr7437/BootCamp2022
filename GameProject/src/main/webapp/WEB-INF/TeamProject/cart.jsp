@@ -82,7 +82,7 @@
 			
 			</div>
 			<div id="sum"><h3>합계 : <%=sum %>원 </h3></div>
-			<div id="pay"><a href="Cpay.cart"><input type="button" id="btnPay" value="결제"></a></div>
+			<div id="pay"><a href="Cpay.cart?sum=<%=sum%>"><input type="button" id="btnPay" value="결제"></a></div>
         </div>
     </div>
 </body>

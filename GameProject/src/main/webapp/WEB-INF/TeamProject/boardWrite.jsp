@@ -24,7 +24,7 @@
 		<div id="insertForm" class="ins">
 			<input type="text" placeholder="제목" name="btitle" class="input" id="intitle">
 			<hr>
-			<input type="text" placeholder="내용" name="btag" class="input" id="intag">
+			<textarea rows="10" cols="174" name="btag" id="btag" placeholder="내용" id="intag" ></textarea>
 			<button type = "submit" class="btn" id="write">작성</button></a>
 			<button class="btn" id="cancel">취소</button>
 		</div>

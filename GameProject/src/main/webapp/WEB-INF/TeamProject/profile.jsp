@@ -55,19 +55,24 @@
             <th>제목</th>
             <th>작성일</th>
          </thead>
-         <tbody>
-           	<c:forEach var='dto' items='${dtos}'>
-				<tr>
-           			<a href="boardUpdate.board?bnum=${dto.bnum}">
-						<td>${dto.bnum}</td>
-						<td>${dto.btitle}</td>
-						<td>${dto.bwriter}</td>
-						<td><fmt:formatDate value="${dto.bdate}"/></td>
-						<td>${dto.bview}</td>
-					</a>
-				</tr>
-			</c:forEach>
+          <tbody>
+            <tr>
+               <td>1</td>
+               <td>ㅇㅇㄴㄹㄴㅇ</td>
+               <td>2018-11-23</td>
+            </tr>
+            <tr>
+               <td>2</td>
+               <td>ㅇㅇㄴㄹㄴㅇ</td>
+               <td>2018-11-23</td>
+            </tr>
+            <tr>
+               <td>3</td>
+               <td>ㅇㅇㄴㄹㄴㅇ</td>
+               <td>2018-11-23</td>
+            </tr>
          </tbody>
+
       </table>
    </div>
 </body>

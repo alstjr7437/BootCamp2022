@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import signUp.ProfileDao;
+
 public class Cpay implements CartService {
 
 	@Override
@@ -15,10 +17,20 @@ public class Cpay implements CartService {
 		request.setCharacterEncoding("utf-8");
 
 		CartDao dao = new CartDao();
+		
+		ProfileDao dao2 = new ProfileDao();
 		HttpSession session = request.getSession();
 		String smail = (String) session.getAttribute("email");
-		System.out.println(smail);
-		dao.payClearCart(smail);
+		int sum = Integer.parseInt(request.getParameter("sum"));
+		
+		int credit = dao2.cashView(smail);
+		
+		if(credit >= sum) {
+			dao.payClearCart(smail, sum);
+			dao2.cashUpdate2(smail, sum);
+		} else {
+			return;
+		}
 		
 
 	}

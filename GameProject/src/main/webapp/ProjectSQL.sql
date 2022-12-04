@@ -18,6 +18,7 @@ CREATE TABLE game(
 	gpicture VARCHAR(100)
 );
 CREATE TABLE cart(
+	cnum INTEGER(10),
 	cuser VARCHAR(150),
 	cgame INT(10),
 	cprice INT(30),
@@ -28,7 +29,7 @@ CREATE TABLE board(
 	bnum INT AUTO_INCREMENT PRIMARY KEY,
 	btitle VARCHAR(100),
 	btag TEXT,
-	bwriter VARCHAR(50),
+	bwriter VARCHAR(150),
 	bdate DATE,
 	bview INT(10),
 	category INT(10),
@@ -48,7 +49,7 @@ CREATE TABLE makegame(
 	mtitle VARCHAR(100),
 	mtag TEXT,
 	mfile VARCHAR(100),
-	mwriter VARCHAR(50),
+	mwriter VARCHAR(150),
 	mview INT(10),
 	mdate DATE
 );
@@ -97,9 +98,18 @@ INSERT INTO comments VALUES(NULL, 'test@naver.com', '15', 'test용', NOW());
 
 UPDATE signup SET uname = 'test1', infor='안녕' WHERE email='test@naver.com';
 delete from signup where email='alstjr01245@gmail.com'
-UPDATE signup SET credit = (SELECT credit FROM signup WHERE email = 'test@naver.com)') + 5000 WHERE email = 'test@naver.com';
+UPDATE signup SET credit = (SELECT credit FROM signup WHERE email = 'test@naver.com') + 5000 WHERE email = 'test@naver.com';
 UPDATE signup SET credit = 5000 WHERE email = 'test@naver.com';
-SELECT credit FROM signup WHERE email = 'test@naver.com)'
+SELECT credit FROM signup WHERE email = 'test@naver.com';
+
+
+delete from cart where cuser='test@naver.com' and 114000 >= (SELECT credit FROM signup WHERE cuser='test@naver.com')
+
+SELECT * FROM cart WHERE cuser='test@naver.com';
+
+UPDATE board SET bwriter = 'alstjr7437@naver.com' WHERE bnum = 21;
+
+dlgmlwo@naver.com
 SELECT * FROM signup;
 SELECT * FROM game;
 SELECT * FROM cart;

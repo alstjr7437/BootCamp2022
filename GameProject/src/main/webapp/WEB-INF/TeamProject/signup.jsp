@@ -20,7 +20,7 @@
 		</div>
 		<div id="insertInfo">
 			<input type="email" placeholder="이메일" autofocus="on" id="inputEmail" class="input" autocomplete="off" name="email"><br>
-			<input type="text" placeholder="전화번호" id="inputPhone" class="input" autocomplete="off" name="phone"><br>
+			<input type="text" placeholder="전화번호" id="inputPhone" class="input" autocomplete="off" name="infor"><br>
 			<input type="text" placeholder="닉네임" class="input" id="userName" name="uname" autocomplete="off"><br>
 			<input type="password" placeholder="비밀번호" id="inputPwd" class="input" name="pwd"><br>
 			<input type="checkbox" class="inputCheck">GPS의 이용 약관 및 판매 약관을 이해했으며, 개인정보처리방침에 동의합니다.<br>

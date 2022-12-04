@@ -115,4 +115,18 @@ public class ProfileDao {
 		}
 		return credit;
 	}
+	public void cashUpdate2(String email, int sum) {
+		String sql = "UPDATE signup SET credit = (SELECT credit FROM signup WHERE email = '"+email+"') - "+ sum +" WHERE email = '"+ email +"'";
+		System.out.println(sql);
+		try(Connection con = getConnection();
+				PreparedStatement pstmt = con.prepareStatement(sql);
+			)
+		{
+		
+		pstmt.executeUpdate();
+		} catch(Exception e) {
+			e.printStackTrace();
+		
+		}
+	}
 }
