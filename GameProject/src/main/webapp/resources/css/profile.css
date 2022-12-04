@@ -75,6 +75,17 @@ body {
             border-width: 3px;
             font-size: 15px;
       }
+      #btnDelete {
+         position: absolute;
+         left: 80%;
+         top: 40%;
+         width: 10%;
+         height: 20%;
+            border-color: #E6E6FA;
+            background-color: #F8F8FF;
+            border-width: 3px;
+            font-size: 15px;
+      }
         #TwoSection {
             position: absolute;
             height: 23rem;

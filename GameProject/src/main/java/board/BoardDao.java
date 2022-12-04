@@ -44,6 +44,19 @@ public class BoardDao {
 			e.printStackTrace();
 		}
 	}
+	public void delete(int bnum) {
+		String sql = "delete from board where bnum=" + bnum;
+		System.out.println(sql);
+		try(Connection con = getConnection();
+				PreparedStatement pstmt = con.prepareStatement(sql);
+			)
+		{
+		
+		pstmt.executeUpdate();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
 	public void update(int bnum, String btitle, String btag) {
 		String sql = "UPDATE board SET btitle = ?, btag = ? WHERE bnum =?";
 		

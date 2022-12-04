@@ -20,6 +20,11 @@ Profile이랑 searchresult information들은
 로고 클릭하거나 장바구니 담으면 
 main으로 이동
 
+css부분
+댓글 부분
+게시글 수정 부분
+프로필 부분
+
 session객체 java에서 쓰기
 HttpSession session = request.getSession();
 session.setAttribute;

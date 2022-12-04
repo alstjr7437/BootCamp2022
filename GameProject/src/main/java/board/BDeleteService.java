@@ -1,4 +1,4 @@
-package makeGame;
+package board;
 
 import java.io.IOException;
 
@@ -6,20 +6,18 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class mBUpdateService implements MakeGameService {
+public class BDeleteService implements BoardService {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	    request.setCharacterEncoding("utf-8");
 	      
-  		int mnum = Integer.parseInt(request.getParameter("mnum"));
-  		String mtitle = request.getParameter("mtitle");
-  		String mtag = request.getParameter("mtag");
+  		int bnum = Integer.parseInt(request.getParameter("bnum"));
   	
-  		MakeGameDao dao = new MakeGameDao();
+  		BoardDao dao = new BoardDao();
+  	
+  		dao.delete(bnum);
 
-  		dao.update(mnum, mtitle, mtag);		
-      
 	}
 
 }

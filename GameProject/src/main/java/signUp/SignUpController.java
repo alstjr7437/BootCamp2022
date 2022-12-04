@@ -31,7 +31,7 @@ public class SignUpController extends HttpServlet {
     	} else if(com != null && com.equals("insert")) { 
     		SignUpService service = new SInsertService();
     		service.execute(request, response);
-    		viewPage = "/WEB-INF/TeamProject/login.sign";
+    		viewPage = "login.sign";
     	} else if(com != null && com.equals("LoginCheck")) { 
     		SignUpService service = new LoginCheckService();
     		service.execute(request, response);
@@ -46,7 +46,15 @@ public class SignUpController extends HttpServlet {
     	} else if(com != null && com.equals("profileUpdate")) { 
     		SignUpService service = new ProfileUpdate();
     		service.execute(request, response);
-    		viewPage = "/WEB-INF/TeamProject/profile.sign";
+    		viewPage = "profile.sign";
+    	} else if(com != null && com.equals("profileDelete")) { 
+    		SignUpService service = new ProfileDelete();
+    		service.execute(request, response);
+    		viewPage = "login.sign";
+    	} else if(com != null && com.equals("cash")) { 
+    		SignUpService service = new CashUpdate();
+    		service.execute(request, response);
+    		viewPage = "profile.sign";
     	}
     	
     	RequestDispatcher rd = request.getRequestDispatcher(viewPage);

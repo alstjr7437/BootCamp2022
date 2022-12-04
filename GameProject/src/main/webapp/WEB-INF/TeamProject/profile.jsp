@@ -27,12 +27,17 @@
          <h2 id = "pname">이름</h2>
          <h3 id = "pinfo">자기 소개</h3>
          <a href="profilemodify.sign"><button id="btnModify">프로필 수정</button></a>
+      	 <a href="login.sign"><button>로그아웃</button></a>
+         <a href="profileDelete.sign"><button id="btnDelete">회원 탈퇴</button></a>
+         <a href="cash.sign?cash=50000"><button>+50000</button></a>
+         <a href="cash.sign?cash=10000"><button>+10000</button></a>
+         <a href="cash.sign?cash=5000"><button>+5000</button></a>
     </div>
        <div id="nav">
           <ul>
              <li>프로필</li>
              <li>보유중인 게임</li>
-             <li>작성한 게시글</li>
+             <li id = "cash">보유한 캐시 : </li>
           </ul>
        </div>
    <div id="TwoSection">
@@ -81,8 +86,10 @@
 					// 프로필 소개글의 데이터가 존재하는 경우 
 					let name = document.querySelector("#pname");
 						name.innerHTML="<%=dto.getName()%>";
-						let info = document.querySelector("#pinfo");
-						info.innerHTML="<%=dto.getinFor()%>.";
+					let info = document.querySelector("#pinfo");
+						info.innerHTML="<%=dto.getinFor()%>";
+					let cash = document.querySelector("#cash");
+						cash.innerHTML+="<%=dto.getCredit()%>";
 				</script>
 
 <%

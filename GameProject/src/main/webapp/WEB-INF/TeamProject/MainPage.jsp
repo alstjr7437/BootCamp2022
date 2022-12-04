@@ -11,7 +11,7 @@
 <title>Main Page</title>
 <link rel="stylesheet" href="resources/css/main.css">
 <link rel="stylesheet" href="resources/css/header.css">
-<script type="text/javascript" src="jsfolder/MainHeader.js"></script>
+<script type="text/javascript" src="resources/jsfolder/MainHeader.js"></script>
 </head>
 <!--<%   
    String email = (String)request.getAttribute("email"); 
@@ -31,6 +31,7 @@
       }
       </script>
       <input type="text" id="searchIn" placeholder="검색어를 입력해주세요" autocomplete="off" onkeydown="if(event.keyCode == 13){enterKey(this.value)}"><a href="profile.sign"><img src="resources/css/image/user2.png" width=50 height=50></a><a href="cart.cart"><img src="resources/css/image/cart.png" width=55 height=55></a>
+   
    </div>
    <div id="BorderLine">
       <h4>게임</h4>

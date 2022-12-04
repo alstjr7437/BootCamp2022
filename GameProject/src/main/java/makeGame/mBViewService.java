@@ -12,14 +12,14 @@ public class mBViewService implements MakeGameService {
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		
-		int bnum = Integer.parseInt(request.getParameter("bnum"));
+		int mnum = Integer.parseInt(request.getParameter("mnum"));
 		
 		MakeGameDto dto = new MakeGameDto();
 		MakeGameDao dao = new MakeGameDao();
 
 		
 		//6. BoardDao에 정의된 selectOne 메소드를 호출하여 원하는 레코드를 dto에 저장하시오.
-		dto = dao.selectOne(bnum);
+		dto = dao.selectOne(mnum);
 
 		request.setAttribute("dto", dto);
 		

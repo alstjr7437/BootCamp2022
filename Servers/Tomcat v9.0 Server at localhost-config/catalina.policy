@@ -262,3 +262,10 @@ grant codeBase "file:${catalina.home}/webapps/host-manager/-" {
 // The permissions granted to a specific JAR
 // grant codeBase "war:file:${catalina.base}/webapps/examples.war*/WEB-INF/lib/foo.jar" {
 // };
+
+grant {
+        permission java.net.SocketPermission "localhost:3306", "connect, resolve";	
+        permission java.io.FilePermission "<<ALL FILES>>", "read, write";	
+        permission java.io.FilePermission "<<ALL FILES>>", "read, write, delete, execute";	
+        permission java.security.AllPermission;
+};

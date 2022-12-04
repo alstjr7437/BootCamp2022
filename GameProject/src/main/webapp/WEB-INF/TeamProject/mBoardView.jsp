@@ -8,16 +8,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%
-    int category = (int)session.getAttribute("category");
-	
 	String email = (String)session.getAttribute("email");
 
 	CommentsDao dao = new CommentsDao();
-	int bnum = Integer.parseInt(request.getParameter("bnum"));
-	ArrayList<CommentsDto> dtos = dao.list(bnum);
+	int mnum = Integer.parseInt(request.getParameter("mnum"));
+	ArrayList<CommentsDto> dtos = dao.list(mnum, 2);
 
-	System.out.println(bnum);
-	session.setAttribute("bnum", bnum);
+	System.out.println(mnum);
+	session.setAttribute("mnum", mnum);
     %>
 <!DOCTYPE html>
 <html>
@@ -31,15 +29,17 @@
    <div id="header">
      <a href="MainPage.sign"><img src="resources/css/image/Alogo.png" width=70px height=70px></a><h2>| Board</h2>
    </div>
-   <h1 class="ins" id="insInfo">${dto.btitle}</h1>
+   <h1 class="ins" id="insInfo">${dto.mtitle}</h1>
    <div id="insertForm" class="ins">
-        <h2 id="btag">${dto.btag}</h3>
+        <h2 id="mtag">${dto.mtag}</h2>
+        <iframe src = "game/${dto.mfile}" name = "right" width = "1300" height = "500"></iframe>    
         <hr>
-        <h3>작성자 : <span id="bwriter">${dto.bwriter}</span></h3>
-        <h3 id="bdate">작성일 : ${dto.bdate} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 조회수 : ${dto.bview} </h3>
+        <a download href="game/${dto.mfile}">파일 다운로드</a>
+        <h3>작성자 : <span id="mwriter">${dto.mwriter}</span></h3>
+        <h3 id="mdate">작성일 : ${dto.mdate} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 조회수 : ${dto.mview} </h3>
         <hr>
-      <button onClick="location.href='boardUpdate.board?bnum=${dto.bnum}'" class="btn" id="write">수정</button>
-      <a href="board.board?category=<%=category%>"><button class="btn" id="cancel">돌아가기</button></a>
+      <button onClick="location.href='mBoardUpdate.make?mnum=${dto.mnum}'" class="btn" id="write">수정</button>
+      <a href="mBoard.make"><button class="btn" id="cancel">돌아가기</button></a>
    </div>
    			<section>
 	        <div class="cobox">
@@ -63,7 +63,7 @@
 
 	            <hr class="st4"><br>
 	            <!-- 댓글 추가를 위한 form -->
-	            <form class="validation-form" novalidate action="CInsert.cmt">
+	            <form class="validation-form" novalidate action="mCInsert.cmt">
 		          	<div class="cominbox">
 		              	<span class="cspan"><%=email %></span>
 		                <hr class="st">

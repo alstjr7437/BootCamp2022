@@ -39,7 +39,8 @@ CREATE TABLE comments(
 	cobcode VARCHAR(150),
 	cocode INT,
 	cotag VARCHAR(100),
-	cdate DATE,
+	cdate DATETIME,
+	cboard INT,
 	FOREIGN KEY (cobcode) REFERENCES signup(email) 
 );
 CREATE TABLE makegame(
@@ -90,16 +91,21 @@ INSERT INTO board VALUES(NULL, 'test1', 'test1', 'test@naver.com', NOW(), 0, 1);
 INSERT INTO board VALUES(NULL,'어떻게 사용하나요?', '장바구니 어떻게 쓰나요?', 'test@naver.com', NOW(), 0, 1);
 INSERT INTO board VALUES(NULL ,'할인은 안하나요?', '언제쯤 할까요??', 'test@naver.com', NOW(), 0, 1);
 
+DELETE FROM makegame WHERE mnum = 2;
 
-
-INSERT INTO comments VALUES(NULL, 'test@naver.com', '15', 'test용', NOW(), 0, 1);
+INSERT INTO comments VALUES(NULL, 'test@naver.com', '15', 'test용', NOW());
 
 UPDATE signup SET uname = 'test1', infor='안녕' WHERE email='test@naver.com';
-
+delete from signup where email='alstjr01245@gmail.com'
+UPDATE signup SET credit = (SELECT credit FROM signup WHERE email = 'test@naver.com)') + 5000 WHERE email = 'test@naver.com';
+UPDATE signup SET credit = 5000 WHERE email = 'test@naver.com';
+SELECT credit FROM signup WHERE email = 'test@naver.com)'
 SELECT * FROM signup;
 SELECT * FROM game;
 SELECT * FROM cart;
 SELECT * FROM board;
+SELECT * FROM comments;
+SELECT * FROM makegame;
 SELECT cgame FROM cart WHERE cuser="alstjr7437@naver.com" AND cgame=2;
 
 SELECT * FROM game WHERE gnum = ( SELECT cgame FROM cart WHERE cuser="alstjr7437@naver.com" AND cgame=2)

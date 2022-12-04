@@ -19,7 +19,8 @@ import board.BViewService2;
 import board.BoardService;
 
 @MultipartConfig(
-		maxFileSize = 10 * 1024 * 1024
+		maxFileSize = 10 * 1024 * 1024,
+		maxRequestSize = 1024 * 1024 * 50
 		
 	)
 
@@ -48,7 +49,7 @@ public class MakeGameController extends HttpServlet {
     	} else if(com != null && com.equals("mBInsert")) { 
     		MakeGameService service = new mBInsertService();
     		service.execute(request, response);
-    		viewPage = "mBoard.board";
+    		viewPage = "mBoard.make";
     	} else if(com != null && com.equals("mBoardUpdate")) { 
     		MakeGameService service = new mBViewService();
     		service.execute(request, response);

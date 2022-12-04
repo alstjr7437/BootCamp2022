@@ -26,7 +26,7 @@ public class mBInsertService implements MakeGameService {
 	      
 	      String contentType = request.getContentType();
 	      if(contentType != null && contentType.startsWith("multipart/")) {
-	    	  dir = request.getServletContext().getRealPath("game");
+	    	  dir = request.getServletContext().getRealPath("/game");
 	    	  System.out.println(dir);
 	      }
 	      File f = new File(dir);
@@ -52,7 +52,7 @@ public class mBInsertService implements MakeGameService {
 	      
 	      MakeGameDto dto = new MakeGameDto(0, mtitle, mtag, mfile, mwriter, 0, null); 
 	      MakeGameDao dao = new MakeGameDao();
-	      //dao.insert(dto);
+	      dao.insert(dto);
 
 	}
 

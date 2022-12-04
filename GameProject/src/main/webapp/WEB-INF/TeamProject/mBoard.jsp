@@ -68,12 +68,12 @@
 		</thead>
 		<tbody>
 			<c:forEach var='dto' items='${dtos}'>
-				<tr onClick="location.href='mBoardView.make?bnum=${dto.bnum}'">
-					<td>${dto.bnum}</td>
-					<td>${dto.btitle}</td>
-					<td>${dto.bwriter}</td>
-					<td><fmt:formatDate value="${dto.bdate}"/></td>
-					<td>${dto.bview}</td>
+				<tr onClick="location.href='mBoardView.make?mnum=${dto.mnum}'">
+					<td>${dto.mnum}</td>
+					<td>${dto.mtitle}</td>
+					<td>${dto.mwriter}</td>	
+					<td><fmt:formatDate value="${dto.mdate}"/></td>
+					<td>${dto.mview}</td>
 				</tr>
 		</c:forEach>
 		</tbody>

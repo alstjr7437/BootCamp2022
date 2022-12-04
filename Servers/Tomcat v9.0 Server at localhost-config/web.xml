@@ -105,6 +105,21 @@
   <!--                       that RFC 7233 clarified that Range headers are -->
   <!--                       only valid for GET requests. [true]            -->
 
+	<servlet>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<servlet-class>servlet.FileUploadServlet</servlet-class>
+		<multipart-config>
+			<location>C:\attaches</location>
+			<max-file-size>-1</max-file-size>
+			<max-request-size>-1</max-request-size>
+			<file-size-threshold>1024</file-size-threshold>
+		</multipart-config>
+	</servlet>
+	<servlet-mapping>
+			<servlet-name>FileUploadServlet</servlet-name>
+			<url-pattern>/fileUpload</url-pattern>
+	</servlet-mapping>
+
     <servlet>
         <servlet-name>default</servlet-name>
         <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>

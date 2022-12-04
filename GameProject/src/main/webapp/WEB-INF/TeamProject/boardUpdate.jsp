@@ -20,7 +20,9 @@
 			<hr>
 			<input type="text" value="${dto.btag}" name="btag" class="input" id="intag">
 			<button type = "submit" class="btn" id="update">수정</button></a>
-			<button onClick="location.href='boardView.board?bnum=${dto.bnum}'" class="btn" id="cancel">취소</button>
 		</div>
+	</form>
+		<button onClick="location.href='boardView.board?bnum=${dto.bnum}'" class="btn" id="cancel">취소</button>
+		<button onClick="location.href='bDelete.board?bnum=${dto.bnum}'" class="btn">삭제</button>
 </body>
 </html>

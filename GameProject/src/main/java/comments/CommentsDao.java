@@ -28,7 +28,7 @@ public class CommentsDao {
 	//댓글 작성
 		public void insert(CommentsDto dto) {
 			//SQL문(인서트로 삽입하기)
-			String sql = "insert into comments(conum, cobcode, cocode, cotag, cdate) values(null, ?, ?, ?, NOW())";
+			String sql = "insert into comments(conum, cobcode, cocode, cotag, cdate, cboard) values(null, ?, ?, ?, NOW(), ?)";
 			
 			try(
 				Connection con = getConnection();						//커넥션 얻기
@@ -38,6 +38,7 @@ public class CommentsDao {
 			pstmt.setString(1, dto.getCobcode());
 			pstmt.setInt(2, dto.getCocode());
 			pstmt.setString(3, dto.getCotag());
+			pstmt.setInt(4, dto.getCboard());
 			
 			//변경하는 쿼리를 쓸때 executeUpdate를 이용
 			int i = pstmt.executeUpdate();
@@ -46,11 +47,11 @@ public class CommentsDao {
 			}
 		}
 		//댓글 보기(i로 게시판 번호 가져오기)
-		public ArrayList<CommentsDto> list(int i) {
+		public ArrayList<CommentsDto> list(int i, int j) {
 			//배열 만들기
 			ArrayList<CommentsDto> dtos = new ArrayList<CommentsDto>();
 			//sql문(select로 찾아오기(desc로 최근 만든것 부터 출력))
-			String sql = "select * from comments where cocode = "+ i +" order by conum desc";
+			String sql = "select * from comments where cocode = "+ i +" and cboard = "+ j +" order by conum desc";
 			try (
 				Connection con = getConnection();					//커넥션 얻기
 				java.sql.Statement stmt = con.createStatement();	//SQL 실행
@@ -65,10 +66,10 @@ public class CommentsDao {
 						int cocode = rs.getInt("cocode");
 						String cotag = rs.getString("cotag");
 						String cdate = rs.getString("cdate");
-						System.out.println(cdate);
+						int cboard = rs.getInt("cboard");
 						
 						//2. 그 데이터들로 Dto를 만든다.
-						CommentsDto dto = new CommentsDto(conum, cobcode, cocode, cotag, cdate);
+						CommentsDto dto = new CommentsDto(conum, cobcode, cocode, cotag, cdate, cboard);
 						//3. 그  Dto를 배열(ArrayList)에 추가한다.
 						dtos.add(dto);
 					}

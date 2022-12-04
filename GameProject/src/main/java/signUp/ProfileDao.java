@@ -3,6 +3,7 @@ package signUp;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 import javax.naming.Context;
@@ -24,9 +25,10 @@ public class ProfileDao {
 	// email을 담은 세션의 값을 받아서 해당 유저의 나머지 정보인 이름과 소개글을 검색해서 프로필에 표시해줌
 	public ArrayList<ProfileDto> profileNameSearch(String cmail) {
 		ArrayList<ProfileDto> dtos = new ArrayList<ProfileDto>();
-		String sql = "select uname, infor from signup where email=?";
+		String sql = "select uname, infor, credit from signup where email=?";
 		String uname = "";
 		String infor = "";
+		int credit = 0;
 		try(
 				Connection con = getConnection();	// 커넥션 얻기
 				PreparedStatement pstmt = con.prepareStatement(sql);	// SQL 실행 준비
@@ -39,8 +41,9 @@ public class ProfileDao {
 				while(rs.next()) {
 					uname = rs.getString("uname");
 					infor = rs.getString("infor");
+					credit = rs.getInt("credit");
 					
-					ProfileDto dto = new ProfileDto(uname, infor);
+					ProfileDto dto = new ProfileDto(uname, infor, credit);
 					dtos.add(dto);
 				}
 			} catch (Exception e) {
@@ -68,5 +71,48 @@ public class ProfileDao {
 				e.printStackTrace();
 			
 		}
+	}
+	public void profileDelete(String email) {
+		String sql = "delete from signup where email='" + email + "'";
+		System.out.println(sql);
+		try(Connection con = getConnection();
+				PreparedStatement pstmt = con.prepareStatement(sql);
+			)
+		{
+		
+		pstmt.executeUpdate();
+		} catch(Exception e) {
+			e.printStackTrace();
+		
+		}
+	}
+	public void cashUpdate(String email, int cash) {
+		String sql = "UPDATE signup SET credit = (SELECT credit FROM signup WHERE email = '"+email+"') + "+cash+" WHERE email = '"+ email +"'";
+		System.out.println(sql);
+		try(Connection con = getConnection();
+				PreparedStatement pstmt = con.prepareStatement(sql);
+			)
+		{
+		
+		pstmt.executeUpdate();
+		} catch(Exception e) {
+			e.printStackTrace();
+		
+		}
+	}
+	public int cashView(String email) {
+		int credit = 0;
+		String sql = "select credit from signup where email = '"+ email + "'";
+		
+		try (	Connection con = getConnection();
+				Statement stmt = con.createStatement();
+				ResultSet rs = stmt.executeQuery(sql);
+			){
+				rs.next();
+				credit = rs.getInt(1);
+		} catch (Exception e) {	
+			e.printStackTrace();
+		}
+		return credit;
 	}
 }

@@ -13,14 +13,15 @@
 	  <a href="MainPage.sign"><img src="resources/css/image/Alogo.png" width=70px height=70px></a><h2>| Board</h2>
 	</div>
 	
-	<form action="BUpdate.board?bnum=${dto.bnum}" method="post">
-		<h1 class="ins" id="insInfo">글 수정하기</h1><h3 id="nickname" class="ins">닉네임 : <span id="vwName">${dto.bwriter}</span></h3>
+	<form action="mBUpdate.make?mnum=${dto.mnum}" method="post">
+		<h1 class="ins" id="insInfo">글 수정하기</h1><h3 id="nickname" class="ins">닉네임 : <span id="vwName">${dto.mwriter}</span></h3>
 		<div id="insertForm" class="ins">
-			<input type="text" value="${dto.btitle}" name="btitle" class="input" id="intitle">
+			<input type="text" value="${dto.mtitle}" name="mtitle" class="input" id="intitle">
 			<hr>
-			<input type="text" value="${dto.btag}" name="btag" class="input" id="intag">
+			<input type="text" value="${dto.mtag}" name="btag" class="input" id="intag">
+			<input type="file" class="form-control" id="filename" name="filename" value="${dto.mfile }">
 			<button type = "submit" class="btn" id="update">수정</button></a>
-			<button onClick="location.href='boardView.board?bnum=${dto.bnum}'" class="btn" id="cancel">취소</button>
+			<button onClick="location.href='mBoardView.make?mnum=${dto.mnum}'" class="btn" id="cancel">취소</button>
 		</div>
 </body>
 </html>

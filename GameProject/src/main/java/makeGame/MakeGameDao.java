@@ -68,7 +68,7 @@ public class MakeGameDao {
 		public ArrayList<MakeGameDto> list(int page, int numOfRecords) {
 			//배열 만들기
 			ArrayList<MakeGameDto> dtos = new ArrayList<MakeGameDto>();
-			String sql = "select * from makegame order by bnum desc limit ?, ?";
+			String sql = "select * from makegame order by mnum desc limit ?, ?";
 			try (
 				Connection con = getConnection();					//커넥션 얻기
 				PreparedStatement pstmt = con.prepareStatement(sql);
@@ -102,7 +102,7 @@ public class MakeGameDao {
 		
 		public int recordCount() {
 			int count = 0;
-			String sql = "select count(bnum) from makegame";
+			String sql = "select count(mnum) from makegame";
 			
 			try (	Connection con = getConnection();
 					Statement stmt = con.createStatement();

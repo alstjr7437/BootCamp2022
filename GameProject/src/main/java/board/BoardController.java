@@ -48,7 +48,12 @@ public class BoardController extends HttpServlet {
     		service.execute(request, response);
     		int bnum = Integer.parseInt(request.getParameter("bnum"));
     		viewPage = "/WEB-INF/TeamProject/boardView.board?bnum="+bnum;
-    	} 
+    	}  else if(com != null && com.equals("bDelete")) { 
+    		BoardService service = new BDeleteService();
+    		service.execute(request, response);
+        	int category = (int) session.getAttribute("category");
+    		viewPage = "board.board?category="+category;	
+    	}
     	
     	RequestDispatcher rd = request.getRequestDispatcher(viewPage);
     	rd.forward(request, response);

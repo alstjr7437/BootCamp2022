@@ -27,8 +27,7 @@ public class LoginCheckService implements SignUpService{
 			request.setAttribute("Login", "MainPage.sign");
 			session.setAttribute("email", email);
 		} else {
-
-			request.setAttribute("Login", "Login.sign");
+			request.setAttribute("Login", "login.sign");
 		}
 	}
 }
