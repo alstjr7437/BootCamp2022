@@ -103,9 +103,10 @@ UPDATE signup SET credit = 5000 WHERE email = 'test@naver.com';
 SELECT credit FROM signup WHERE email = 'test@naver.com';
 
 
-delete from cart where cuser='test@naver.com' and 114000 >= (SELECT credit FROM signup WHERE cuser='test@naver.com')
+delete from cart where cuser='alstjr7437@naver.com';
 
 SELECT * FROM cart WHERE cuser='test@naver.com';
+SELECT credit FROM signup WHERE email='test@naver.com'
 
 UPDATE board SET bwriter = 'alstjr7437@naver.com' WHERE bnum = 21;
 
