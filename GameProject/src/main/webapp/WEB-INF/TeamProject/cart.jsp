@@ -18,6 +18,17 @@
 	int sum = cdao.cartSumSelect(email);
 	ProfileDao dao2 = new ProfileDao();
 	int credit = dao2.cashView(email);
+	
+	if(request.getParameter("error") != null) {
+		int error = Integer.parseInt(request.getParameter("error"));
+		
+		if(error == 1) {
+			out.println("<script>alert('돈이 부족합니다!!'); </script>");
+		} else if(error == 0){
+			out.println("<script>alert('결제 완료!!'); </script>");
+		}
+	}
+
 %>
 <!DOCTYPE html>
 <html>

@@ -74,7 +74,6 @@ public class ProfileDao {
 	}
 	public void profileDelete(String email) {
 		String sql = "delete from signup where email='" + email + "'";
-		System.out.println(sql);
 		try(Connection con = getConnection();
 				PreparedStatement pstmt = con.prepareStatement(sql);
 			)

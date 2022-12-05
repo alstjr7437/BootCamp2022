@@ -22,7 +22,7 @@
 			<input type="text" placeholder="제목" name="mtitle" class="input" id="intitle">
 			<hr>
 			<input type="text" placeholder="내용" name="mtag" class="input" id="intag">
-			<input type="file" class="form-control" id="filename" name="filename">
+			<input type="file" class="form-control" id="filename" name="filename" multiple required>
 			<button type = "submit" class="btn" id="write">작성</button></a>
 			<button class="btn" id="cancel">취소</button>
 		</div>

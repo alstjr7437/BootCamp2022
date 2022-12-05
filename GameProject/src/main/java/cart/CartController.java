@@ -8,7 +8,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import signUp.ProfileDao;
 import signUp.SInsertService;
 import signUp.SignUpService;
 
@@ -28,8 +30,17 @@ public class CartController extends HttpServlet {
     		viewPage = "/WEB-INF/TeamProject/cart.jsp";
     	} else if(com != null && com.equals("Cpay")) { 
     		CartService service = new Cpay();
+    		int sum = Integer.parseInt(request.getParameter("sum"));
+    		ProfileDao dao2 = new ProfileDao();
+    		HttpSession session = request.getSession();
+    		String smail = (String) session.getAttribute("email");
+    		int credit = dao2.cashView(smail);
     		service.execute(request, response);
-    		viewPage = "/WEB-INF/TeamProject/cart.cart";
+    		if(credit >= sum) {
+        		viewPage = "/WEB-INF/TeamProject/cart.cart?error=0";
+    		} else {
+        		viewPage = "/WEB-INF/TeamProject/cart.cart?error=1";
+    		}
     	}
     	
     	

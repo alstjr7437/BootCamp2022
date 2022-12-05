@@ -55,7 +55,7 @@
                     <div class="second py-2 px-2"> <span class="text1"><%=dto.getCotag() %></span>
                         <div class="d-flex justify-content-between py-1 pt-2">
                             <div><img src="resources/css/image/unknownAvatar.jpg" width="18"><span class="text2"><%=dto.getCobcode() %></span><span class="tdate"><%=dto.getCdate() %></span></div>
-                            <div><span class="text3"><button class="mod">수정</button></span><span class="thumbup"><i class="fa fa-thumbs-o-up"></i></span><span class="text4"><button class="del">삭제</button></span></div>
+                            <div><span class="text3"><button class="mod">수정</button></span><span class="thumbup"><i class="fa fa-thumbs-o-up"></i></span><span class="text4"><button onclick="location.href='cDelete.cmt?conum=<%=dto.getConum()%>'" class="del">삭제</button></span></div>
                         </div>
                     </div>
                 </div>

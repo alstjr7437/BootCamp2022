@@ -46,6 +46,21 @@ public class CommentsDao {
 				e.printStackTrace();
 			}
 		}
+		
+		public void commentsDelete(int conum) {
+			String sql = "delete from comments where conum='" + conum + "'";
+			System.out.println(sql);
+			try(Connection con = getConnection();
+					PreparedStatement pstmt = con.prepareStatement(sql);
+				)
+			{
+			
+			pstmt.executeUpdate();
+			} catch(Exception e) {
+				e.printStackTrace();
+			
+			}
+		}
 		//댓글 보기(i로 게시판 번호 가져오기)
 		public ArrayList<CommentsDto> list(int i, int j) {
 			//배열 만들기

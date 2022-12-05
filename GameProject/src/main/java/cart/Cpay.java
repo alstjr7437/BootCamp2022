@@ -1,6 +1,7 @@
 package cart;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -29,6 +30,7 @@ public class Cpay implements CartService {
 			dao.payClearCart(smail, sum);
 			dao2.cashUpdate2(smail, sum);
 		} else {
+
 			return;
 		}
 		

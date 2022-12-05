@@ -29,14 +29,26 @@ public class CommentsController extends HttpServlet {
     		service.execute(request, response);
     		HttpSession session = request.getSession();
     		int bnum = (int)session.getAttribute("bnum");	
-    		viewPage = "/WEB-INF/TeamProject/boardView.board?bnum="+bnum;
+    		viewPage = "boardView.board?bnum="+bnum;
     	} else if(com != null && com.equals("mCInsert")) { 
     		CommentsService service = new mCInsertService();
     		service.execute(request, response);
     		HttpSession session = request.getSession();
     		int mnum = (int)session.getAttribute("mnum");	
-    		viewPage = "/WEB-INF/TeamProject/mBoardView.make?mnum="+mnum;
-    	}
+    		viewPage = "mBoardView.make?mnum="+mnum;
+    	} else if(com != null && com.equals("cDelete")) { 
+    		CommentsService service = new cDeleteService();
+    		service.execute(request, response);
+    		HttpSession session = request.getSession();
+    		int bnum = (int)session.getAttribute("bnum");	
+    		viewPage = "boardView.board?bnum="+bnum;
+    	}  else if(com != null && com.equals("mCDelete")) { 
+    		CommentsService service = new cDeleteService();
+    		service.execute(request, response);
+    		HttpSession session = request.getSession();
+    		int mnum = (int)session.getAttribute("mnum");	
+    		viewPage = "mBoardView.make?mnum="+mnum;
+    	} 
     	
 
     	

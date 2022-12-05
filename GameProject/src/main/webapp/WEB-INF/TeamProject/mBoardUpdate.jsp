@@ -19,9 +19,11 @@
 			<input type="text" value="${dto.mtitle}" name="mtitle" class="input" id="intitle">
 			<hr>
 			<input type="text" value="${dto.mtag}" name="btag" class="input" id="intag">
-			<input type="file" class="form-control" id="filename" name="filename" value="${dto.mfile }">
+			<input type="file" class="form-control" id="filename" name="filename" value="game/${dto.mfile }">
 			<button type = "submit" class="btn" id="update">수정</button></a>
-			<button onClick="location.href='mBoardView.make?mnum=${dto.mnum}'" class="btn" id="cancel">취소</button>
 		</div>
+	</form>
+	
+	<button onClick="location.href='mBoardView.make?mnum=${dto.mnum}'" class="btn" id="cancel">취소</button>
 </body>
 </html>
